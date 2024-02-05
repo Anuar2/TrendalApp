@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E4AF1E92AC96AE9009E18AB /* TrendalAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF1E82AC96AE9009E18AB /* TrendalAppApp.swift */; };
+		5E4AF1EB2AC96AE9009E18AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF1EA2AC96AE9009E18AB /* ContentView.swift */; };
+		5E4AF1ED2AC96AEA009E18AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4AF1EC2AC96AEA009E18AB /* Assets.xcassets */; };
+		5E4AF1F02AC96AEA009E18AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4AF1EF2AC96AEA009E18AB /* Preview Assets.xcassets */; };
+		5E4AF1FA2AC96AEA009E18AB /* TrendalAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF1F92AC96AEA009E18AB /* TrendalAppTests.swift */; };
+		5E4AF2042AC96AEA009E18AB /* TrendalAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2032AC96AEA009E18AB /* TrendalAppUITests.swift */; };
+		5E4AF2062AC96AEA009E18AB /* TrendalAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2052AC96AEA009E18AB /* TrendalAppUITestsLaunchTests.swift */; };
+		5E4AF2132AC96B0C009E18AB /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2122AC96B0C009E18AB /* BackButtonView.swift */; };
+		5E4AF2152AC96C38009E18AB /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2142AC96C38009E18AB /* DefaultButton.swift */; };
+		5E4AF2172AC96E29009E18AB /* ExtensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2162AC96E29009E18AB /* ExtensionColor.swift */; };
+		5E4AF2192AC97EEF009E18AB /* OtpTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2182AC97EEF009E18AB /* OtpTextFieldView.swift */; };
+		5E4AF21B2AC97F5B009E18AB /* Text+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF21A2AC97F5B009E18AB /* Text+Utils.swift */; };
+		5E4AF21F2AC987B0009E18AB /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF21E2AC987B0009E18AB /* TextFieldView.swift */; };
+		5E4AF2212AC98986009E18AB /* PhoneNumberTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2202AC98986009E18AB /* PhoneNumberTextFieldView.swift */; };
+		5E4AF2232AC99707009E18AB /* OtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2222AC99707009E18AB /* OtpView.swift */; };
+		5E4AF2252ACA7252009E18AB /* FirtsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2242ACA7252009E18AB /* FirtsPage.swift */; };
+		5E4AF2272ACA745B009E18AB /* SecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2262ACA745B009E18AB /* SecondPage.swift */; };
+		5E4AF2292ACA7B60009E18AB /* ThirdPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2282ACA7B60009E18AB /* ThirdPage.swift */; };
+		C0F80D792B700FC100F9508F /* JobCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F80D782B700FC100F9508F /* JobCellView.swift */; };
+		C0F80D7B2B70100700F9508F /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F80D7A2B70100700F9508F /* JobModel.swift */; };
+		C0F80D812B7028C200F9508F /* JobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F80D802B7028C200F9508F /* JobView.swift */; };
+		E0E7632E2AD7ADCA0046D7B0 /* FourthPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E7632D2AD7ADCA0046D7B0 /* FourthPage.swift */; };
+		E0E763302AD7BBC40046D7B0 /* GenderSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E7632F2AD7BBC40046D7B0 /* GenderSelect.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E4AF1F62AC96AEA009E18AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E4AF1DD2AC96AE9009E18AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E4AF1E42AC96AE9009E18AB;
+			remoteInfo = TrendalApp;
+		};
+		5E4AF2002AC96AEA009E18AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E4AF1DD2AC96AE9009E18AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E4AF1E42AC96AE9009E18AB;
+			remoteInfo = TrendalApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E4AF1E52AC96AE9009E18AB /* TrendalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4AF1E82AC96AE9009E18AB /* TrendalAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendalAppApp.swift; sourceTree = "<group>"; };
+		5E4AF1EA2AC96AE9009E18AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5E4AF1EC2AC96AEA009E18AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E4AF1EF2AC96AEA009E18AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5E4AF1F52AC96AEA009E18AB /* TrendalAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrendalAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4AF1F92AC96AEA009E18AB /* TrendalAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendalAppTests.swift; sourceTree = "<group>"; };
+		5E4AF1FF2AC96AEA009E18AB /* TrendalAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrendalAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4AF2032AC96AEA009E18AB /* TrendalAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendalAppUITests.swift; sourceTree = "<group>"; };
+		5E4AF2052AC96AEA009E18AB /* TrendalAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendalAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5E4AF2122AC96B0C009E18AB /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
+		5E4AF2142AC96C38009E18AB /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
+		5E4AF2162AC96E29009E18AB /* ExtensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColor.swift; sourceTree = "<group>"; };
+		5E4AF2182AC97EEF009E18AB /* OtpTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpTextFieldView.swift; sourceTree = "<group>"; };
+		5E4AF21A2AC97F5B009E18AB /* Text+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Utils.swift"; sourceTree = "<group>"; };
+		5E4AF21E2AC987B0009E18AB /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		5E4AF2202AC98986009E18AB /* PhoneNumberTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTextFieldView.swift; sourceTree = "<group>"; };
+		5E4AF2222AC99707009E18AB /* OtpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpView.swift; sourceTree = "<group>"; };
+		5E4AF2242ACA7252009E18AB /* FirtsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirtsPage.swift; sourceTree = "<group>"; };
+		5E4AF2262ACA745B009E18AB /* SecondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPage.swift; sourceTree = "<group>"; };
+		5E4AF2282ACA7B60009E18AB /* ThirdPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPage.swift; sourceTree = "<group>"; };
+		C0F80D782B700FC100F9508F /* JobCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCellView.swift; sourceTree = "<group>"; };
+		C0F80D7A2B70100700F9508F /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
+		C0F80D802B7028C200F9508F /* JobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobView.swift; sourceTree = "<group>"; };
+		E0E7632D2AD7ADCA0046D7B0 /* FourthPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthPage.swift; sourceTree = "<group>"; };
+		E0E7632F2AD7BBC40046D7B0 /* GenderSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelect.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E4AF1E22AC96AE9009E18AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E4AF1F22AC96AEA009E18AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E4AF1FC2AC96AEA009E18AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E4AF1DC2AC96AE9009E18AB = {
+			isa = PBXGroup;
+			children = (
+				5E4AF1E72AC96AE9009E18AB /* TrendalApp */,
+				5E4AF1F82AC96AEA009E18AB /* TrendalAppTests */,
+				5E4AF2022AC96AEA009E18AB /* TrendalAppUITests */,
+				5E4AF1E62AC96AE9009E18AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E4AF1E62AC96AE9009E18AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E4AF1E52AC96AE9009E18AB /* TrendalApp.app */,
+				5E4AF1F52AC96AEA009E18AB /* TrendalAppTests.xctest */,
+				5E4AF1FF2AC96AEA009E18AB /* TrendalAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E4AF1E72AC96AE9009E18AB /* TrendalApp */ = {
+			isa = PBXGroup;
+			children = (
+				C0F80D7C2B70288800F9508F /* MainPage */,
+				5E4AF1E82AC96AE9009E18AB /* TrendalAppApp.swift */,
+				5E4AF1EA2AC96AE9009E18AB /* ContentView.swift */,
+				5E4AF1EC2AC96AEA009E18AB /* Assets.xcassets */,
+				5E4AF1EE2AC96AEA009E18AB /* Preview Content */,
+				5E4AF2122AC96B0C009E18AB /* BackButtonView.swift */,
+				5E4AF2142AC96C38009E18AB /* DefaultButton.swift */,
+				5E4AF2162AC96E29009E18AB /* ExtensionColor.swift */,
+				5E4AF2182AC97EEF009E18AB /* OtpTextFieldView.swift */,
+				5E4AF21A2AC97F5B009E18AB /* Text+Utils.swift */,
+				5E4AF21E2AC987B0009E18AB /* TextFieldView.swift */,
+				5E4AF2202AC98986009E18AB /* PhoneNumberTextFieldView.swift */,
+				5E4AF2222AC99707009E18AB /* OtpView.swift */,
+				5E4AF2242ACA7252009E18AB /* FirtsPage.swift */,
+				5E4AF2262ACA745B009E18AB /* SecondPage.swift */,
+				5E4AF2282ACA7B60009E18AB /* ThirdPage.swift */,
+				E0E7632D2AD7ADCA0046D7B0 /* FourthPage.swift */,
+				E0E7632F2AD7BBC40046D7B0 /* GenderSelect.swift */,
+			);
+			path = TrendalApp;
+			sourceTree = "<group>";
+		};
+		5E4AF1EE2AC96AEA009E18AB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5E4AF1EF2AC96AEA009E18AB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5E4AF1F82AC96AEA009E18AB /* TrendalAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E4AF1F92AC96AEA009E18AB /* TrendalAppTests.swift */,
+			);
+			path = TrendalAppTests;
+			sourceTree = "<group>";
+		};
+		5E4AF2022AC96AEA009E18AB /* TrendalAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5E4AF2032AC96AEA009E18AB /* TrendalAppUITests.swift */,
+				5E4AF2052AC96AEA009E18AB /* TrendalAppUITestsLaunchTests.swift */,
+			);
+			path = TrendalAppUITests;
+			sourceTree = "<group>";
+		};
+		C0F80D7C2B70288800F9508F /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				C0F80D7D2B70289600F9508F /* Model */,
+				C0F80D7E2B70289D00F9508F /* View */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		C0F80D7D2B70289600F9508F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0F80D7A2B70100700F9508F /* JobModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C0F80D7E2B70289D00F9508F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0F80D7F2B7028A600F9508F /* Cell */,
+				C0F80D802B7028C200F9508F /* JobView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0F80D7F2B7028A600F9508F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C0F80D782B700FC100F9508F /* JobCellView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E4AF1E42AC96AE9009E18AB /* TrendalApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E4AF2092AC96AEA009E18AB /* Build configuration list for PBXNativeTarget "TrendalApp" */;
+			buildPhases = (
+				5E4AF1E12AC96AE9009E18AB /* Sources */,
+				5E4AF1E22AC96AE9009E18AB /* Frameworks */,
+				5E4AF1E32AC96AE9009E18AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrendalApp;
+			productName = TrendalApp;
+			productReference = 5E4AF1E52AC96AE9009E18AB /* TrendalApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E4AF1F42AC96AEA009E18AB /* TrendalAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E4AF20C2AC96AEA009E18AB /* Build configuration list for PBXNativeTarget "TrendalAppTests" */;
+			buildPhases = (
+				5E4AF1F12AC96AEA009E18AB /* Sources */,
+				5E4AF1F22AC96AEA009E18AB /* Frameworks */,
+				5E4AF1F32AC96AEA009E18AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E4AF1F72AC96AEA009E18AB /* PBXTargetDependency */,
+			);
+			name = TrendalAppTests;
+			productName = TrendalAppTests;
+			productReference = 5E4AF1F52AC96AEA009E18AB /* TrendalAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5E4AF1FE2AC96AEA009E18AB /* TrendalAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E4AF20F2AC96AEA009E18AB /* Build configuration list for PBXNativeTarget "TrendalAppUITests" */;
+			buildPhases = (
+				5E4AF1FB2AC96AEA009E18AB /* Sources */,
+				5E4AF1FC2AC96AEA009E18AB /* Frameworks */,
+				5E4AF1FD2AC96AEA009E18AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E4AF2012AC96AEA009E18AB /* PBXTargetDependency */,
+			);
+			name = TrendalAppUITests;
+			productName = TrendalAppUITests;
+			productReference = 5E4AF1FF2AC96AEA009E18AB /* TrendalAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E4AF1DD2AC96AE9009E18AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5E4AF1E42AC96AE9009E18AB = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					5E4AF1F42AC96AEA009E18AB = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 5E4AF1E42AC96AE9009E18AB;
+					};
+					5E4AF1FE2AC96AEA009E18AB = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 5E4AF1E42AC96AE9009E18AB;
+					};
+				};
+			};
+			buildConfigurationList = 5E4AF1E02AC96AE9009E18AB /* Build configuration list for PBXProject "TrendalApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E4AF1DC2AC96AE9009E18AB;
+			productRefGroup = 5E4AF1E62AC96AE9009E18AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E4AF1E42AC96AE9009E18AB /* TrendalApp */,
+				5E4AF1F42AC96AEA009E18AB /* TrendalAppTests */,
+				5E4AF1FE2AC96AEA009E18AB /* TrendalAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E4AF1E32AC96AE9009E18AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4AF1F02AC96AEA009E18AB /* Preview Assets.xcassets in Resources */,
+				5E4AF1ED2AC96AEA009E18AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E4AF1F32AC96AEA009E18AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E4AF1FD2AC96AEA009E18AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E4AF1E12AC96AE9009E18AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E7632E2AD7ADCA0046D7B0 /* FourthPage.swift in Sources */,
+				5E4AF2232AC99707009E18AB /* OtpView.swift in Sources */,
+				C0F80D792B700FC100F9508F /* JobCellView.swift in Sources */,
+				5E4AF1EB2AC96AE9009E18AB /* ContentView.swift in Sources */,
+				5E4AF1E92AC96AE9009E18AB /* TrendalAppApp.swift in Sources */,
+				5E4AF21F2AC987B0009E18AB /* TextFieldView.swift in Sources */,
+				C0F80D812B7028C200F9508F /* JobView.swift in Sources */,
+				5E4AF2132AC96B0C009E18AB /* BackButtonView.swift in Sources */,
+				5E4AF2152AC96C38009E18AB /* DefaultButton.swift in Sources */,
+				5E4AF2192AC97EEF009E18AB /* OtpTextFieldView.swift in Sources */,
+				5E4AF2252ACA7252009E18AB /* FirtsPage.swift in Sources */,
+				E0E763302AD7BBC40046D7B0 /* GenderSelect.swift in Sources */,
+				5E4AF2272ACA745B009E18AB /* SecondPage.swift in Sources */,
+				5E4AF2172AC96E29009E18AB /* ExtensionColor.swift in Sources */,
+				C0F80D7B2B70100700F9508F /* JobModel.swift in Sources */,
+				5E4AF2292ACA7B60009E18AB /* ThirdPage.swift in Sources */,
+				5E4AF2212AC98986009E18AB /* PhoneNumberTextFieldView.swift in Sources */,
+				5E4AF21B2AC97F5B009E18AB /* Text+Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E4AF1F12AC96AEA009E18AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4AF1FA2AC96AEA009E18AB /* TrendalAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E4AF1FB2AC96AEA009E18AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4AF2042AC96AEA009E18AB /* TrendalAppUITests.swift in Sources */,
+				5E4AF2062AC96AEA009E18AB /* TrendalAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E4AF1F72AC96AEA009E18AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E4AF1E42AC96AE9009E18AB /* TrendalApp */;
+			targetProxy = 5E4AF1F62AC96AEA009E18AB /* PBXContainerItemProxy */;
+		};
+		5E4AF2012AC96AEA009E18AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E4AF1E42AC96AE9009E18AB /* TrendalApp */;
+			targetProxy = 5E4AF2002AC96AEA009E18AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5E4AF2072AC96AEA009E18AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5E4AF2082AC96AEA009E18AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E4AF20A2AC96AEA009E18AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TrendalApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 87SSGGH7S6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = previewProject.TrendalApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E4AF20B2AC96AEA009E18AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TrendalApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 87SSGGH7S6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = previewProject.TrendalApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5E4AF20D2AC96AEA009E18AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87SSGGH7S6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = previewProject.TrendalAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrendalApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrendalApp";
+			};
+			name = Debug;
+		};
+		5E4AF20E2AC96AEA009E18AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87SSGGH7S6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = previewProject.TrendalAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrendalApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrendalApp";
+			};
+			name = Release;
+		};
+		5E4AF2102AC96AEA009E18AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87SSGGH7S6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = previewProject.TrendalAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrendalApp;
+			};
+			name = Debug;
+		};
+		5E4AF2112AC96AEA009E18AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87SSGGH7S6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = previewProject.TrendalAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrendalApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E4AF1E02AC96AE9009E18AB /* Build configuration list for PBXProject "TrendalApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4AF2072AC96AEA009E18AB /* Debug */,
+				5E4AF2082AC96AEA009E18AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E4AF2092AC96AEA009E18AB /* Build configuration list for PBXNativeTarget "TrendalApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4AF20A2AC96AEA009E18AB /* Debug */,
+				5E4AF20B2AC96AEA009E18AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E4AF20C2AC96AEA009E18AB /* Build configuration list for PBXNativeTarget "TrendalAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4AF20D2AC96AEA009E18AB /* Debug */,
+				5E4AF20E2AC96AEA009E18AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E4AF20F2AC96AEA009E18AB /* Build configuration list for PBXNativeTarget "TrendalAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4AF2102AC96AEA009E18AB /* Debug */,
+				5E4AF2112AC96AEA009E18AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E4AF1DD2AC96AE9009E18AB /* Project object */;
+}
