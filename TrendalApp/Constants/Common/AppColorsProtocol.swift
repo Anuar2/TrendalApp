@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+extension AppColorsProtocol {
+    static var appPurple: AppColor { setColorWithHex(hex: "#A647A0") }
+}

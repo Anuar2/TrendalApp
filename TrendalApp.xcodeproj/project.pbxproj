@@ -28,6 +28,24 @@
 		C0F80D792B700FC100F9508F /* JobCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F80D782B700FC100F9508F /* JobCellView.swift */; };
 		C0F80D7B2B70100700F9508F /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F80D7A2B70100700F9508F /* JobModel.swift */; };
 		C0F80D812B7028C200F9508F /* JobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F80D802B7028C200F9508F /* JobView.swift */; };
+		CEBC44952B70EB0C00995F56 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44942B70EB0C00995F56 /* Assets.swift */; };
+		CEBC44972B70EB9600995F56 /* StringConstant .swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44962B70EB9600995F56 /* StringConstant .swift */; };
+		CEBC44992B70EBC600995F56 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44982B70EBC600995F56 /* CommonConstants.swift */; };
+		CEBC449F2B70EC6900995F56 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC449E2B70EC6900995F56 /* IntExtension.swift */; };
+		CEBC44A12B70ECA200995F56 /* AppColorsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44A02B70ECA200995F56 /* AppColorsProtocol.swift */; };
+		CEBC44A32B70ED4F00995F56 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44A22B70ED4F00995F56 /* FontExtension.swift */; };
+		CEBC44A72B70EE4D00995F56 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44A62B70EE4D00995F56 /* DateFormatter.swift */; };
+		CEBC44AA2B70F04400995F56 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CEBC44A92B70F04400995F56 /* Alamofire */; };
+		CEBC44AD2B70F0B000995F56 /* Interceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44AC2B70F0B000995F56 /* Interceptor.swift */; };
+		CEBC44B02B70F17500995F56 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44AF2B70F17500995F56 /* AccountService.swift */; };
+		CEBC44B32B70F19700995F56 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44B22B70F19700995F56 /* User.swift */; };
+		CEBC44B52B70F1E200995F56 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44B42B70F1E200995F56 /* DataStorage.swift */; };
+		CEBC44B82B70F20E00995F56 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44B72B70F20E00995F56 /* UserDefaultsStorage.swift */; };
+		CEBC44BA2B70F22300995F56 /* StorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44B92B70F22300995F56 /* StorageProtocol.swift */; };
+		CEBC44BC2B70F26700995F56 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44BB2B70F26700995F56 /* ApiClient.swift */; };
+		CEBC44BE2B70F2A700995F56 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44BD2B70F2A700995F56 /* Endpoint.swift */; };
+		CEBC44C02B70F2D700995F56 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44BF2B70F2D700995F56 /* NetworkLogger.swift */; };
+		CEBC44C22B70F33E00995F56 /* Router+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44C12B70F33E00995F56 /* Router+Auth.swift */; };
 		E0E7632E2AD7ADCA0046D7B0 /* FourthPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E7632D2AD7ADCA0046D7B0 /* FourthPage.swift */; };
 		E0E763302AD7BBC40046D7B0 /* GenderSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E7632F2AD7BBC40046D7B0 /* GenderSelect.swift */; };
 /* End PBXBuildFile section */
@@ -74,6 +92,23 @@
 		C0F80D782B700FC100F9508F /* JobCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCellView.swift; sourceTree = "<group>"; };
 		C0F80D7A2B70100700F9508F /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
 		C0F80D802B7028C200F9508F /* JobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobView.swift; sourceTree = "<group>"; };
+		CEBC44942B70EB0C00995F56 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		CEBC44962B70EB9600995F56 /* StringConstant .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringConstant .swift"; sourceTree = "<group>"; };
+		CEBC44982B70EBC600995F56 /* CommonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
+		CEBC449E2B70EC6900995F56 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		CEBC44A02B70ECA200995F56 /* AppColorsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorsProtocol.swift; sourceTree = "<group>"; };
+		CEBC44A22B70ED4F00995F56 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		CEBC44A62B70EE4D00995F56 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		CEBC44AC2B70F0B000995F56 /* Interceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interceptor.swift; sourceTree = "<group>"; };
+		CEBC44AF2B70F17500995F56 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		CEBC44B22B70F19700995F56 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CEBC44B42B70F1E200995F56 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		CEBC44B72B70F20E00995F56 /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
+		CEBC44B92B70F22300995F56 /* StorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProtocol.swift; sourceTree = "<group>"; };
+		CEBC44BB2B70F26700995F56 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		CEBC44BD2B70F2A700995F56 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		CEBC44BF2B70F2D700995F56 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		CEBC44C12B70F33E00995F56 /* Router+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Router+Auth.swift"; sourceTree = "<group>"; };
 		E0E7632D2AD7ADCA0046D7B0 /* FourthPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthPage.swift; sourceTree = "<group>"; };
 		E0E7632F2AD7BBC40046D7B0 /* GenderSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBC44AA2B70F04400995F56 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,24 +162,17 @@
 		5E4AF1E72AC96AE9009E18AB /* TrendalApp */ = {
 			isa = PBXGroup;
 			children = (
+				CEBC44C32B70F35E00995F56 /* View */,
+				CEBC44B62B70F1FC00995F56 /* DataStorage */,
+				CEBC44B12B70F19000995F56 /* Model */,
+				CEBC44AE2B70F16400995F56 /* Service */,
+				CEBC44AB2B70F09D00995F56 /* ApiClient */,
+				CEBC44932B70EAF600995F56 /* Constants */,
 				C0F80D7C2B70288800F9508F /* MainPage */,
 				5E4AF1E82AC96AE9009E18AB /* TrendalAppApp.swift */,
 				5E4AF1EA2AC96AE9009E18AB /* ContentView.swift */,
 				5E4AF1EC2AC96AEA009E18AB /* Assets.xcassets */,
 				5E4AF1EE2AC96AEA009E18AB /* Preview Content */,
-				5E4AF2122AC96B0C009E18AB /* BackButtonView.swift */,
-				5E4AF2142AC96C38009E18AB /* DefaultButton.swift */,
-				5E4AF2162AC96E29009E18AB /* ExtensionColor.swift */,
-				5E4AF2182AC97EEF009E18AB /* OtpTextFieldView.swift */,
-				5E4AF21A2AC97F5B009E18AB /* Text+Utils.swift */,
-				5E4AF21E2AC987B0009E18AB /* TextFieldView.swift */,
-				5E4AF2202AC98986009E18AB /* PhoneNumberTextFieldView.swift */,
-				5E4AF2222AC99707009E18AB /* OtpView.swift */,
-				5E4AF2242ACA7252009E18AB /* FirtsPage.swift */,
-				5E4AF2262ACA745B009E18AB /* SecondPage.swift */,
-				5E4AF2282ACA7B60009E18AB /* ThirdPage.swift */,
-				E0E7632D2AD7ADCA0046D7B0 /* FourthPage.swift */,
-				E0E7632F2AD7BBC40046D7B0 /* GenderSelect.swift */,
 			);
 			path = TrendalApp;
 			sourceTree = "<group>";
@@ -207,6 +236,94 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		CEBC44932B70EAF600995F56 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC449A2B70EBDD00995F56 /* Common */,
+				CEBC44942B70EB0C00995F56 /* Assets.swift */,
+				CEBC44962B70EB9600995F56 /* StringConstant .swift */,
+				CEBC44982B70EBC600995F56 /* CommonConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		CEBC449A2B70EBDD00995F56 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC449B2B70EBE600995F56 /* Protocols */,
+				CEBC449E2B70EC6900995F56 /* IntExtension.swift */,
+				CEBC44A02B70ECA200995F56 /* AppColorsProtocol.swift */,
+				CEBC44A22B70ED4F00995F56 /* FontExtension.swift */,
+				5E4AF21A2AC97F5B009E18AB /* Text+Utils.swift */,
+				CEBC44A62B70EE4D00995F56 /* DateFormatter.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CEBC449B2B70EBE600995F56 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5E4AF2162AC96E29009E18AB /* ExtensionColor.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CEBC44AB2B70F09D00995F56 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC44AC2B70F0B000995F56 /* Interceptor.swift */,
+				CEBC44BB2B70F26700995F56 /* ApiClient.swift */,
+				CEBC44BD2B70F2A700995F56 /* Endpoint.swift */,
+				CEBC44BF2B70F2D700995F56 /* NetworkLogger.swift */,
+				CEBC44C12B70F33E00995F56 /* Router+Auth.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
+		CEBC44AE2B70F16400995F56 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC44AF2B70F17500995F56 /* AccountService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CEBC44B12B70F19000995F56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC44B22B70F19700995F56 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEBC44B62B70F1FC00995F56 /* DataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC44B42B70F1E200995F56 /* DataStorage.swift */,
+				CEBC44B72B70F20E00995F56 /* UserDefaultsStorage.swift */,
+				CEBC44B92B70F22300995F56 /* StorageProtocol.swift */,
+			);
+			path = DataStorage;
+			sourceTree = "<group>";
+		};
+		CEBC44C32B70F35E00995F56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E4AF2122AC96B0C009E18AB /* BackButtonView.swift */,
+				5E4AF2142AC96C38009E18AB /* DefaultButton.swift */,
+				5E4AF2182AC97EEF009E18AB /* OtpTextFieldView.swift */,
+				5E4AF21E2AC987B0009E18AB /* TextFieldView.swift */,
+				5E4AF2202AC98986009E18AB /* PhoneNumberTextFieldView.swift */,
+				5E4AF2222AC99707009E18AB /* OtpView.swift */,
+				5E4AF2242ACA7252009E18AB /* FirtsPage.swift */,
+				5E4AF2262ACA745B009E18AB /* SecondPage.swift */,
+				5E4AF2282ACA7B60009E18AB /* ThirdPage.swift */,
+				E0E7632D2AD7ADCA0046D7B0 /* FourthPage.swift */,
+				E0E7632F2AD7BBC40046D7B0 /* GenderSelect.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -223,6 +340,9 @@
 			dependencies = (
 			);
 			name = TrendalApp;
+			packageProductDependencies = (
+				CEBC44A92B70F04400995F56 /* Alamofire */,
+			);
 			productName = TrendalApp;
 			productReference = 5E4AF1E52AC96AE9009E18AB /* TrendalApp.app */;
 			productType = "com.apple.product-type.application";
@@ -295,6 +415,9 @@
 				Base,
 			);
 			mainGroup = 5E4AF1DC2AC96AE9009E18AB;
+			packageReferences = (
+				CEBC44A82B70F04400995F56 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 5E4AF1E62AC96AE9009E18AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,21 +462,38 @@
 			files = (
 				E0E7632E2AD7ADCA0046D7B0 /* FourthPage.swift in Sources */,
 				5E4AF2232AC99707009E18AB /* OtpView.swift in Sources */,
+				CEBC44952B70EB0C00995F56 /* Assets.swift in Sources */,
+				CEBC44BC2B70F26700995F56 /* ApiClient.swift in Sources */,
 				C0F80D792B700FC100F9508F /* JobCellView.swift in Sources */,
 				5E4AF1EB2AC96AE9009E18AB /* ContentView.swift in Sources */,
+				CEBC449F2B70EC6900995F56 /* IntExtension.swift in Sources */,
+				CEBC44972B70EB9600995F56 /* StringConstant .swift in Sources */,
 				5E4AF1E92AC96AE9009E18AB /* TrendalAppApp.swift in Sources */,
 				5E4AF21F2AC987B0009E18AB /* TextFieldView.swift in Sources */,
+				CEBC44B02B70F17500995F56 /* AccountService.swift in Sources */,
+				CEBC44C02B70F2D700995F56 /* NetworkLogger.swift in Sources */,
+				CEBC44B82B70F20E00995F56 /* UserDefaultsStorage.swift in Sources */,
+				CEBC44BA2B70F22300995F56 /* StorageProtocol.swift in Sources */,
 				C0F80D812B7028C200F9508F /* JobView.swift in Sources */,
 				5E4AF2132AC96B0C009E18AB /* BackButtonView.swift in Sources */,
 				5E4AF2152AC96C38009E18AB /* DefaultButton.swift in Sources */,
+				CEBC44AD2B70F0B000995F56 /* Interceptor.swift in Sources */,
+				CEBC44C22B70F33E00995F56 /* Router+Auth.swift in Sources */,
 				5E4AF2192AC97EEF009E18AB /* OtpTextFieldView.swift in Sources */,
+				CEBC44A12B70ECA200995F56 /* AppColorsProtocol.swift in Sources */,
+				CEBC44A72B70EE4D00995F56 /* DateFormatter.swift in Sources */,
 				5E4AF2252ACA7252009E18AB /* FirtsPage.swift in Sources */,
 				E0E763302AD7BBC40046D7B0 /* GenderSelect.swift in Sources */,
 				5E4AF2272ACA745B009E18AB /* SecondPage.swift in Sources */,
+				CEBC44B32B70F19700995F56 /* User.swift in Sources */,
 				5E4AF2172AC96E29009E18AB /* ExtensionColor.swift in Sources */,
+				CEBC44A32B70ED4F00995F56 /* FontExtension.swift in Sources */,
+				CEBC44B52B70F1E200995F56 /* DataStorage.swift in Sources */,
+				CEBC44992B70EBC600995F56 /* CommonConstants.swift in Sources */,
 				C0F80D7B2B70100700F9508F /* JobModel.swift in Sources */,
 				5E4AF2292ACA7B60009E18AB /* ThirdPage.swift in Sources */,
 				5E4AF2212AC98986009E18AB /* PhoneNumberTextFieldView.swift in Sources */,
+				CEBC44BE2B70F2A700995F56 /* Endpoint.swift in Sources */,
 				5E4AF21B2AC97F5B009E18AB /* Text+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -679,6 +819,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEBC44A82B70F04400995F56 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEBC44A92B70F04400995F56 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEBC44A82B70F04400995F56 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E4AF1DD2AC96AE9009E18AB /* Project object */;
 }

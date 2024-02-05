@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+protocol StorageProtocol {
+    func set(value: Any, forKey key: String)
+    func data(forKey key: String) -> Data?
+    func string(forKey key: String) -> String?
+    func remove(forKey key: String)
+}

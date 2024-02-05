@@ -6,3 +6,19 @@
 //
 
 import Foundation
+import UIKit
+import SwiftUI
+
+
+internal enum Assets: String {
+    //MainPage
+    case model
+    
+    public var name: String {
+        return self.rawValue
+    }
+    
+    public var image: UIImage? {
+        return UIImage(named: rawValue)
+    }
+}

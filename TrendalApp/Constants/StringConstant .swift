@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct StringConstant {
+    
+    struct Buttons {
+        static let choose = "Выбрать"
+    }
+}
