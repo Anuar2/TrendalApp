@@ -1,0 +1,2 @@
+# TrendalApp
+TrendalApp
