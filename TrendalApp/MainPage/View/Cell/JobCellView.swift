@@ -17,7 +17,7 @@ struct JobCellView: View {
                 Image(model.companyImage)
                 Text(model.companyName).font(.system(size: 13))
                 Spacer()
-                Image(systemName: "heart").foregroundColor(Color.fromHex("38BDF8"))
+                LikeAnimationView()
             }
             HStack {
                 VStack (alignment: .leading){
@@ -29,61 +29,42 @@ struct JobCellView: View {
             }
             Spacer().frame(height: 5)
             HStack {
-                Image(systemName: "mappin.circle.fill")
-                Text(model.location)
+                LocationView(location: model.location)
                 Text("·")
-                Image(systemName: "suitcase.fill")
-                Text(model.experience)
+                ExperienceView(experience: model.experience)
             }
             .font(.system(size: 14))
             .foregroundColor(Color.gray)
             HStack {
                 Button("Полный рабочий день", action: {})
-                    .background(Color.fromHex("334155"))
+                    .background(Color.monoTags)
                     .buttonStyle(.bordered)
                     .cornerRadius(10)
                 Button("Гибкий график", action: {})
-                    .background(Color.fromHex("334155"))
+                    .background(Color.monoTags)
                     .buttonStyle(.bordered)
                     .cornerRadius(10)
             }
             .padding(.top, 5)
             .font(.system(size: 13))
-            HStack {
-                Button(action: {}) {
-                    Text("Отправить отклик")
-                        .frame(maxWidth: .infinity)
-                }
-                .background(Color.fromHex("38BDF8"))
-                .buttonStyle(.bordered)
-                .controlSize(.large)
-                .cornerRadius(10)
-                .frame(maxWidth: .infinity)
-            }
+            
+            DefaultButton(buttonTitle: "Отправить отклик")
             .padding(.top, 5)
             .font(.system(size: 15))
             Spacer()
             HStack {
-                Image(systemName: "calendar")
-                Text(model.date)
+                DateView(date: model.date)
                 Spacer()
-                Image(systemName: "eye.fill")
-                Text("Просмотрено")
+                ViewedView(viewed: model.viewed)
             }
             .font(.system(size: 12))
             .foregroundColor(Color.gray)
-           
-            
         }
         .padding()
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .foregroundColor(Color.white)
         .background(
-            Color.fromHex("1E293B")
+            Color.mainBackground
         ).clipShape(RoundedRectangle(cornerRadius: 20))
-        .scaleEffect(1)
-        .animation(.linear(duration: 1), value: 1)
-        
     }
         
 }
@@ -101,7 +82,8 @@ struct JobCellView_Previews: PreviewProvider {
                         salary: "170 000 - 250 000 ₸",
                         location: "Алматы",
                         experience: "От 1 до 3 лет",
-                        date: "28 сентября"
+                        date: "2024-02-06T12:00:00",
+                        viewed: true
                     )
                 )
                 .padding(.bottom, 20)
@@ -115,8 +97,9 @@ struct JobCellView_Previews: PreviewProvider {
                         position: "Мобилограф",
                         salary: "170 000 - 250 000 ₸",
                         location: "Алматы",
-                        experience: "От 1 до 3 лет",
-                        date: "28 сентября"
+                        experience: "Без опыта работы",
+                        date: "2024-05-16T12:00:00",
+                        viewed: false
                     )
                 )
                 .padding(.bottom, 20)
@@ -129,8 +112,9 @@ struct JobCellView_Previews: PreviewProvider {
                         position: "Мобилограф",
                         salary: "170 000 - 250 000 ₸",
                         location: "Алматы",
-                        experience: "От 1 до 3 лет",
-                        date: "28 сентября"
+                        experience: "От 3 до 6 лет",
+                        date: "2024-12-010T12:00:00",
+                        viewed: false
                     )
                 )
                 .padding(.bottom, 20)

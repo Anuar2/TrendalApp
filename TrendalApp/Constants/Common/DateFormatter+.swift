@@ -9,20 +9,29 @@ import Foundation
 
 // MARK: - TimeFormat
 
+// TODO: Refactor | AzSu
 public extension DateFormatter {
     
-    static var busTicketDateFormmater: DateFormatter {
+    static var iso8601Formatter: DateFormatter {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH-mm-ss"
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        formatter.locale = Locale(identifier: "ru_RU")
         formatter.timeZone = Calendar.current.timeZone
         return formatter
     }
     
-    static var ticketFormatter: DateFormatter {
+    static var dayMonthFormatter: DateFormatter {
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd.MM.yy HH:mm"
+        formatter.dateFormat = "d MMMM"
+        formatter.locale = Locale(identifier: "ru_RU")
         formatter.timeZone = Calendar.current.timeZone
         return formatter
+    }
+    
+    static func formattedDayMonth(date: String) -> String {
+        guard let formattedDateString = DateFormatter.iso8601Formatter.date(from: date) else { return ""}
+        let formattedString = DateFormatter.dayMonthFormatter.string(from: formattedDateString)
+        return formattedString
     }
 }
 

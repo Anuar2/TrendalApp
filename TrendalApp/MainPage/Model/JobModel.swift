@@ -16,4 +16,5 @@ struct JobModel {
     var location: String
     var experience: String
     var date: String
+    var viewed: Bool
 }

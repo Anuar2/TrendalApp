@@ -22,7 +22,7 @@ struct DefaultButton: View {
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
         .frame(alignment: .center)
-        .background(Color.setColorWithHex(hex: "#38BDF8"))
+        .background(Color.primaryShade)
         .cornerRadius(12)
     }
 }

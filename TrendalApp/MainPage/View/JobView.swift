@@ -37,7 +37,8 @@ private var mocks: [JobModel] = [
         salary: "170 000 - 250 000 ₸",
         location: "Алматы",
         experience: "От 1 до 3 лет",
-        date: "28 сентября"
+        date: "28 сентября",
+        viewed: true
     ),
     JobModel(
         id: 2,
@@ -47,7 +48,8 @@ private var mocks: [JobModel] = [
         salary: "170 000 - 250 000 ₸",
         location: "Алматы",
         experience: "От 1 до 3 лет",
-        date: "28 сентября"
+        date: "28 сентября",
+        viewed: true
     ),
     JobModel(
         id: 3,
@@ -57,7 +59,8 @@ private var mocks: [JobModel] = [
         salary: "170 000 - 250 000 ₸",
         location: "Алматы",
         experience: "От 1 до 3 лет",
-        date: "28 сентября"
+        date: "28 сентября",
+        viewed: true
     ),
     JobModel(
         id: 4,
@@ -67,7 +70,8 @@ private var mocks: [JobModel] = [
         salary: "170 000 - 250 000 ₸",
         location: "Алматы",
         experience: "От 1 до 3 лет",
-        date: "28 сентября"
+        date: "28 сентября",
+        viewed: true
     )
 ]
 
