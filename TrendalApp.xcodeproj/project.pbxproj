@@ -33,7 +33,7 @@
 		C03413D82B721888004B0099 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413D72B721888004B0099 /* Color+.swift */; };
 		C0F80D792B700FC100F9508F /* JobCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F80D782B700FC100F9508F /* JobCellView.swift */; };
 		C0F80D7B2B70100700F9508F /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F80D7A2B70100700F9508F /* JobModel.swift */; };
-		C0F80D812B7028C200F9508F /* JobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F80D802B7028C200F9508F /* JobView.swift */; };
+		C0F80D812B7028C200F9508F /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F80D802B7028C200F9508F /* JobsView.swift */; };
 		CEBC44952B70EB0C00995F56 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44942B70EB0C00995F56 /* Assets.swift */; };
 		CEBC44972B70EB9600995F56 /* StringConstant .swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44962B70EB9600995F56 /* StringConstant .swift */; };
 		CEBC44992B70EBC600995F56 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44982B70EBC600995F56 /* CommonConstants.swift */; };
@@ -103,7 +103,7 @@
 		C03413D72B721888004B0099 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		C0F80D782B700FC100F9508F /* JobCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCellView.swift; sourceTree = "<group>"; };
 		C0F80D7A2B70100700F9508F /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
-		C0F80D802B7028C200F9508F /* JobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobView.swift; sourceTree = "<group>"; };
+		C0F80D802B7028C200F9508F /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
 		CEBC44942B70EB0C00995F56 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		CEBC44962B70EB9600995F56 /* StringConstant .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringConstant .swift"; sourceTree = "<group>"; };
 		CEBC44982B70EBC600995F56 /* CommonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
@@ -175,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				C03413D02B720EBF004B0099 /* UIComponents */,
-				C03413CD2B720E48004B0099 /* Helpers */,
 				CEBC44B62B70F1FC00995F56 /* DataStorage */,
 				CEBC44B12B70F19000995F56 /* Model */,
 				CEBC44AE2B70F16400995F56 /* Service */,
@@ -225,24 +224,65 @@
 		C03413D02B720EBF004B0099 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				5E4AF2122AC96B0C009E18AB /* BackButtonView.swift */,
-				5E4AF2142AC96C38009E18AB /* DefaultButton.swift */,
-				5E4AF2182AC97EEF009E18AB /* OtpTextFieldView.swift */,
-				5E4AF21E2AC987B0009E18AB /* TextFieldView.swift */,
-				5E4AF2202AC98986009E18AB /* PhoneNumberTextFieldView.swift */,
-				5E4AF2222AC99707009E18AB /* OtpView.swift */,
+				C03413DE2B7241DE004B0099 /* Specific */,
+				C03413DD2B7241B3004B0099 /* TextFields */,
+				C03413DC2B724199004B0099 /* Buttons */,
+				C03413DB2B724160004B0099 /* AdditionalInformation */,
+				C03413DA2B724115004B0099 /* Screens */,
+				C03413CD2B720E48004B0099 /* Helpers */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		C03413DA2B724115004B0099 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
 				5E4AF2242ACA7252009E18AB /* FirtsPage.swift */,
 				5E4AF2262ACA745B009E18AB /* SecondPage.swift */,
 				5E4AF2282ACA7B60009E18AB /* ThirdPage.swift */,
 				E0E7632D2AD7ADCA0046D7B0 /* FourthPage.swift */,
-				E0E7632F2AD7BBC40046D7B0 /* GenderSelect.swift */,
-				C03413902B70F62A004B0099 /* LikeAnimationView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C03413DB2B724160004B0099 /* AdditionalInformation */ = {
+			isa = PBXGroup;
+			children = (
 				C03413C92B7204AE004B0099 /* ViewedView.swift */,
 				C03413CB2B720D79004B0099 /* DateView.swift */,
 				C03413D32B721709004B0099 /* LocationView.swift */,
 				C03413D52B7217CC004B0099 /* ExperienceView.swift */,
 			);
-			path = UIComponents;
+			path = AdditionalInformation;
+			sourceTree = "<group>";
+		};
+		C03413DC2B724199004B0099 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				5E4AF2122AC96B0C009E18AB /* BackButtonView.swift */,
+				5E4AF2142AC96C38009E18AB /* DefaultButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		C03413DD2B7241B3004B0099 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				5E4AF2182AC97EEF009E18AB /* OtpTextFieldView.swift */,
+				5E4AF21E2AC987B0009E18AB /* TextFieldView.swift */,
+				5E4AF2202AC98986009E18AB /* PhoneNumberTextFieldView.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		C03413DE2B7241DE004B0099 /* Specific */ = {
+			isa = PBXGroup;
+			children = (
+				5E4AF2222AC99707009E18AB /* OtpView.swift */,
+				E0E7632F2AD7BBC40046D7B0 /* GenderSelect.swift */,
+				C03413902B70F62A004B0099 /* LikeAnimationView.swift */,
+			);
+			path = Specific;
 			sourceTree = "<group>";
 		};
 		C0F80D7C2B70288800F9508F /* MainPage */ = {
@@ -266,7 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				C0F80D7F2B7028A600F9508F /* Cell */,
-				C0F80D802B7028C200F9508F /* JobView.swift */,
+				C0F80D802B7028C200F9508F /* JobsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -502,7 +542,7 @@
 				CEBC44B82B70F20E00995F56 /* UserDefaultsStorage.swift in Sources */,
 				C03413D42B721709004B0099 /* LocationView.swift in Sources */,
 				CEBC44BA2B70F22300995F56 /* StorageProtocol.swift in Sources */,
-				C0F80D812B7028C200F9508F /* JobView.swift in Sources */,
+				C0F80D812B7028C200F9508F /* JobsView.swift in Sources */,
 				5E4AF2132AC96B0C009E18AB /* BackButtonView.swift in Sources */,
 				5E4AF2152AC96C38009E18AB /* DefaultButton.swift in Sources */,
 				C03413D62B7217CC004B0099 /* ExperienceView.swift in Sources */,
