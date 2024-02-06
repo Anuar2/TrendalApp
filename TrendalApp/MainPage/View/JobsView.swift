@@ -9,14 +9,22 @@ import SwiftUI
 
 struct JobView: View {
     var posts: [JobModel]
-    
+    @State private var searchText = ""
+
     var body: some View {
-        List {
-            ForEach(mocks, id: \.id) { mock in
-                JobCellView(model: mock)
+        NavigationStack {
+            ScrollView {
+                LazyVStack {
+                    ForEach(mocks, id: \.id) { mock in
+                        JobCellView(model: mock)
+                    }
+                }
             }
+            .padding()
+            .background(Color.fromHex("#0F172A"))
+            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .automatic), prompt: "Look for something")
         }
-        .listStyle(.plain)
+
     }
 }
 
@@ -37,8 +45,8 @@ private var mocks: [JobModel] = [
         salary: "170 000 - 250 000 ₸",
         location: "Алматы",
         experience: "От 1 до 3 лет",
-        date: "28 сентября",
-        viewed: true
+        date: "2024-12-010T12:00:00",
+        viewed: false
     ),
     JobModel(
         id: 2,
@@ -48,7 +56,7 @@ private var mocks: [JobModel] = [
         salary: "170 000 - 250 000 ₸",
         location: "Алматы",
         experience: "От 1 до 3 лет",
-        date: "28 сентября",
+        date: "2024-12-010T12:00:00",
         viewed: true
     ),
     JobModel(
@@ -59,8 +67,8 @@ private var mocks: [JobModel] = [
         salary: "170 000 - 250 000 ₸",
         location: "Алматы",
         experience: "От 1 до 3 лет",
-        date: "28 сентября",
-        viewed: true
+        date: "2024-12-010T12:00:00",
+        viewed: false
     ),
     JobModel(
         id: 4,
@@ -70,7 +78,7 @@ private var mocks: [JobModel] = [
         salary: "170 000 - 250 000 ₸",
         location: "Алматы",
         experience: "От 1 до 3 лет",
-        date: "28 сентября",
+        date: "2024-12-010T12:00:00",
         viewed: true
     )
 ]

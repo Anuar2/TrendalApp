@@ -15,7 +15,6 @@ struct DateView: View {
         HStack {
             Image(systemName: "calendar")
             Text(DateFormatter.formattedDayMonth(date: date))
-            
         }
         .font(.system(size: 12))
         .foregroundColor(Color.gray)
