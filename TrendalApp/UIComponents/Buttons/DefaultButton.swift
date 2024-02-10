@@ -10,9 +10,12 @@ import SwiftUI
 struct DefaultButton: View {
     
     var buttonTitle: String?
+    var action: (() -> Void)?
     
     var body: some View {
-        HStack(alignment: .center) {
+        Button(action: {
+            self.action?()
+        }) {
             Text(buttonTitle ?? "Войти")
                 .font(Font.custom("SF Pro Display", size: 16))
                 .multilineTextAlignment(.center)

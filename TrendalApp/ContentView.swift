@@ -11,7 +11,7 @@ struct ContentView: View {
     @State var smsToken: String = ""
     var body: some View {
         VStack {
-            FourthPage(namePlaceHolder: "bvz", lastNamePlaceHolder: "asd")
+            SecondPage()
         }
         .padding()
     }

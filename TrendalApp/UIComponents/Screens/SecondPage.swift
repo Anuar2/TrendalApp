@@ -32,7 +32,9 @@ struct SecondPage: View {
                     PhoneNumberTextFieldView(placeHolder: SecondPage.$placholderPreview)
                         .padding(.bottom, 40)
                     
-                    DefaultButton(buttonTitle: "Войти")
+                    DefaultButton(buttonTitle: "Войти") {
+                        
+                    }
                     
                     Spacer()
                     
