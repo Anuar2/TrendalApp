@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E14FD0E2B78B154002AD82E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E14FD0D2B78B154002AD82E /* Launch Screen.storyboard */; };
+		5E14FD102B7932A8002AD82E /* SizedSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FD0F2B7932A8002AD82E /* SizedSpacer.swift */; };
+		5E14FD122B793301002AD82E /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FD112B793301002AD82E /* BackButton.swift */; };
+		5E14FD162B793448002AD82E /* PhoneRegisterConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FD152B793448002AD82E /* PhoneRegisterConfigurator.swift */; };
+		5E14FD182B793462002AD82E /* PhoneRegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FD172B793462002AD82E /* PhoneRegisterRouter.swift */; };
 		5E4AF1E92AC96AE9009E18AB /* TrendalAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF1E82AC96AE9009E18AB /* TrendalAppApp.swift */; };
 		5E4AF1EB2AC96AE9009E18AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF1EA2AC96AE9009E18AB /* ContentView.swift */; };
 		5E4AF1ED2AC96AEA009E18AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4AF1EC2AC96AEA009E18AB /* Assets.xcassets */; };
@@ -23,8 +28,8 @@
 		5E4AF2212AC98986009E18AB /* PhoneNumberTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2202AC98986009E18AB /* PhoneNumberTextFieldView.swift */; };
 		5E4AF2232AC99707009E18AB /* OtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2222AC99707009E18AB /* OtpView.swift */; };
 		5E4AF2252ACA7252009E18AB /* FirtsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2242ACA7252009E18AB /* FirtsPage.swift */; };
-		5E4AF2272ACA745B009E18AB /* SecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2262ACA745B009E18AB /* SecondPage.swift */; };
-		5E4AF2292ACA7B60009E18AB /* ThirdPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2282ACA7B60009E18AB /* ThirdPage.swift */; };
+		5E4AF2272ACA745B009E18AB /* PhoneRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2262ACA745B009E18AB /* PhoneRegisterView.swift */; };
+		5E4AF2292ACA7B60009E18AB /* OtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2282ACA7B60009E18AB /* OtpView.swift */; };
 		C03413912B70F62A004B0099 /* LikeAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413902B70F62A004B0099 /* LikeAnimationView.swift */; };
 		C03413CA2B7204AE004B0099 /* ViewedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413C92B7204AE004B0099 /* ViewedView.swift */; };
 		C03413CC2B720D79004B0099 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413CB2B720D79004B0099 /* DateView.swift */; };
@@ -74,6 +79,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E14FD0D2B78B154002AD82E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		5E14FD0F2B7932A8002AD82E /* SizedSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizedSpacer.swift; sourceTree = "<group>"; };
+		5E14FD112B793301002AD82E /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		5E14FD152B793448002AD82E /* PhoneRegisterConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneRegisterConfigurator.swift; sourceTree = "<group>"; };
+		5E14FD172B793462002AD82E /* PhoneRegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneRegisterRouter.swift; sourceTree = "<group>"; };
 		5E4AF1E52AC96AE9009E18AB /* TrendalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4AF1E82AC96AE9009E18AB /* TrendalAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendalAppApp.swift; sourceTree = "<group>"; };
 		5E4AF1EA2AC96AE9009E18AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,8 +103,8 @@
 		5E4AF2202AC98986009E18AB /* PhoneNumberTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTextFieldView.swift; sourceTree = "<group>"; };
 		5E4AF2222AC99707009E18AB /* OtpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpView.swift; sourceTree = "<group>"; };
 		5E4AF2242ACA7252009E18AB /* FirtsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirtsPage.swift; sourceTree = "<group>"; };
-		5E4AF2262ACA745B009E18AB /* SecondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPage.swift; sourceTree = "<group>"; };
-		5E4AF2282ACA7B60009E18AB /* ThirdPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPage.swift; sourceTree = "<group>"; };
+		5E4AF2262ACA745B009E18AB /* PhoneRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneRegisterView.swift; sourceTree = "<group>"; };
+		5E4AF2282ACA7B60009E18AB /* OtpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpView.swift; sourceTree = "<group>"; };
 		C03413902B70F62A004B0099 /* LikeAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationView.swift; sourceTree = "<group>"; };
 		C03413C92B7204AE004B0099 /* ViewedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedView.swift; sourceTree = "<group>"; };
 		C03413CB2B720D79004B0099 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
@@ -151,6 +161,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E14FD132B7933BD002AD82E /* PhoneRegister */ = {
+			isa = PBXGroup;
+			children = (
+				5E14FD142B79342B002AD82E /* View */,
+				5E14FD152B793448002AD82E /* PhoneRegisterConfigurator.swift */,
+				5E14FD172B793462002AD82E /* PhoneRegisterRouter.swift */,
+			);
+			path = PhoneRegister;
+			sourceTree = "<group>";
+		};
+		5E14FD142B79342B002AD82E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E4AF2262ACA745B009E18AB /* PhoneRegisterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5E4AF1DC2AC96AE9009E18AB = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +213,7 @@
 				5E4AF1EA2AC96AE9009E18AB /* ContentView.swift */,
 				5E4AF1EC2AC96AEA009E18AB /* Assets.xcassets */,
 				5E4AF1EE2AC96AEA009E18AB /* Preview Content */,
+				5E14FD0D2B78B154002AD82E /* Launch Screen.storyboard */,
 			);
 			path = TrendalApp;
 			sourceTree = "<group>";
@@ -228,21 +257,21 @@
 				C03413DD2B7241B3004B0099 /* TextFields */,
 				C03413DC2B724199004B0099 /* Buttons */,
 				C03413DB2B724160004B0099 /* AdditionalInformation */,
-				C03413DA2B724115004B0099 /* Screens */,
+				C03413DA2B724115004B0099 /* Modules */,
 				C03413CD2B720E48004B0099 /* Helpers */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
 		};
-		C03413DA2B724115004B0099 /* Screens */ = {
+		C03413DA2B724115004B0099 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5E14FD132B7933BD002AD82E /* PhoneRegister */,
 				5E4AF2242ACA7252009E18AB /* FirtsPage.swift */,
-				5E4AF2262ACA745B009E18AB /* SecondPage.swift */,
-				5E4AF2282ACA7B60009E18AB /* ThirdPage.swift */,
+				5E4AF2282ACA7B60009E18AB /* OtpView.swift */,
 				E0E7632D2AD7ADCA0046D7B0 /* FourthPage.swift */,
 			);
-			path = Screens;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		C03413DB2B724160004B0099 /* AdditionalInformation */ = {
@@ -340,6 +369,8 @@
 				5E4AF21A2AC97F5B009E18AB /* Text+Utils.swift */,
 				CEBC44A62B70EE4D00995F56 /* DateFormatter+.swift */,
 				C03413D72B721888004B0099 /* Color+.swift */,
+				5E14FD0F2B7932A8002AD82E /* SizedSpacer.swift */,
+				5E14FD112B793301002AD82E /* BackButton.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -500,6 +531,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E14FD0E2B78B154002AD82E /* Launch Screen.storyboard in Resources */,
 				5E4AF1F02AC96AEA009E18AB /* Preview Assets.xcassets in Resources */,
 				5E4AF1ED2AC96AEA009E18AB /* Assets.xcassets in Resources */,
 			);
@@ -535,6 +567,7 @@
 				CEBC449F2B70EC6900995F56 /* IntExtension.swift in Sources */,
 				CEBC44972B70EB9600995F56 /* StringConstant .swift in Sources */,
 				5E4AF1E92AC96AE9009E18AB /* TrendalAppApp.swift in Sources */,
+				5E14FD102B7932A8002AD82E /* SizedSpacer.swift in Sources */,
 				5E4AF21F2AC987B0009E18AB /* TextFieldView.swift in Sources */,
 				CEBC44B02B70F17500995F56 /* AccountService.swift in Sources */,
 				CEBC44C02B70F2D700995F56 /* NetworkLogger.swift in Sources */,
@@ -543,6 +576,7 @@
 				C03413D42B721709004B0099 /* LocationView.swift in Sources */,
 				CEBC44BA2B70F22300995F56 /* StorageProtocol.swift in Sources */,
 				C0F80D812B7028C200F9508F /* JobsView.swift in Sources */,
+				5E14FD122B793301002AD82E /* BackButton.swift in Sources */,
 				5E4AF2132AC96B0C009E18AB /* BackButtonView.swift in Sources */,
 				5E4AF2152AC96C38009E18AB /* DefaultButton.swift in Sources */,
 				C03413D62B7217CC004B0099 /* ExperienceView.swift in Sources */,
@@ -553,16 +587,18 @@
 				CEBC44A72B70EE4D00995F56 /* DateFormatter+.swift in Sources */,
 				5E4AF2252ACA7252009E18AB /* FirtsPage.swift in Sources */,
 				E0E763302AD7BBC40046D7B0 /* GenderSelect.swift in Sources */,
-				5E4AF2272ACA745B009E18AB /* SecondPage.swift in Sources */,
+				5E4AF2272ACA745B009E18AB /* PhoneRegisterView.swift in Sources */,
 				C03413CA2B7204AE004B0099 /* ViewedView.swift in Sources */,
 				C03413912B70F62A004B0099 /* LikeAnimationView.swift in Sources */,
+				5E14FD182B793462002AD82E /* PhoneRegisterRouter.swift in Sources */,
+				5E14FD162B793448002AD82E /* PhoneRegisterConfigurator.swift in Sources */,
 				CEBC44B32B70F19700995F56 /* User.swift in Sources */,
 				5E4AF2172AC96E29009E18AB /* ExtensionColor.swift in Sources */,
 				CEBC44A32B70ED4F00995F56 /* FontExtension.swift in Sources */,
 				CEBC44B52B70F1E200995F56 /* DataStorage.swift in Sources */,
 				CEBC44992B70EBC600995F56 /* CommonConstants.swift in Sources */,
 				C0F80D7B2B70100700F9508F /* JobModel.swift in Sources */,
-				5E4AF2292ACA7B60009E18AB /* ThirdPage.swift in Sources */,
+				5E4AF2292ACA7B60009E18AB /* OtpView.swift in Sources */,
 				5E4AF2212AC98986009E18AB /* PhoneNumberTextFieldView.swift in Sources */,
 				CEBC44BE2B70F2A700995F56 /* Endpoint.swift in Sources */,
 				C03413CC2B720D79004B0099 /* DateView.swift in Sources */,
@@ -731,6 +767,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -760,6 +797,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

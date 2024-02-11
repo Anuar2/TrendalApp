@@ -24,54 +24,23 @@ struct PhoneNumberTextFieldView: View {
                 .frame(width: 2, height: 24)
                 .background(Color.fromHex("E2E8F0"))
             
-            TextField(placeHolder, text: $phoneText, onEditingChanged: { isEditing in
-                if !isEditing {
-                    formatPhoneNumber()
+            TextField(placeHolder, text: $phoneText)
+                .foregroundColor(.white)
+                .padding()
+                .onChange(of: phoneText) {
+                    if !$0.isEmpty {
+                        phoneText = $0.formatPhoneNumber(text: phoneText)
+                    }
                 }
-            })
-            .gesture(
-                DragGesture().onChanged { _ in
-                    UIApplication.shared.endEditing()
+                .onChange(of: phoneText) { newValue in
+                    changeBorder = !newValue.isEmpty
                 }
-            )
-            .padding()
-            .onChange(of: phoneText) { newValue in
-                changeBorder = !newValue.isEmpty
-            }
         }
         .overlay(
             RoundedRectangle(cornerRadius: 12)
                 .inset(by: 0.5)
                 .stroke(changeBorder ? Color.fromHex("#38BDF8") : Color.gray, lineWidth: 1)
         )
-    }
-
-    private func formatPhoneNumber() {
-        let cleanedText = phoneText.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
-        
-        guard cleanedText.count >= 7 else {
-            return
-        }
-        
-        let formattedText = String(format: "%@-%@", String(cleanedText.prefix(3)), String(cleanedText.suffix(4)))
-        
-        phoneText = formattedText
-    }
-    
-    func format(with mask: String, phone: String) -> String {
-        let digits = phone.filter({ $0.isNumber })
-        var result = ""
-        
-        var index = digits.startIndex
-        for char in mask where index < digits.endIndex {
-            if char == "X" {
-                result.append(digits[index])
-                index = digits.index(after: index)
-            } else {
-                result.append(char)
-            }
-        }
-        return result
     }
 }
 
@@ -80,5 +49,27 @@ struct PhoneNumberTextFieldView_Previews: PreviewProvider {
 
     static var previews: some View {
         PhoneNumberTextFieldView(placeHolder: $placholderPreview)
+    }
+}
+
+extension String {
+    func formatPhoneNumber(text: String) -> String {
+        let cleanNumber = text.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
+        
+        let mask = "(XXX) XXX-XXXX"
+        
+        var result = ""
+        var startIndex = cleanNumber.startIndex
+        var endIndex = cleanNumber.endIndex
+        
+        for char in mask where startIndex < endIndex {
+            if char == "X" {
+                result.append(cleanNumber[startIndex])
+                startIndex = cleanNumber.index(after: startIndex)
+            } else {
+                result.append(char)
+            }
+        }
+        return result
     }
 }

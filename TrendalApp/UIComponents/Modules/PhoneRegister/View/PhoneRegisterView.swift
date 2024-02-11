@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct SecondPage: View {
+struct PhoneRegisterView: View {
+    
     @State static var placholderPreview: String = "Номер телефона"
-
+    var router = PhoneRegisterRouter()
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -29,12 +31,12 @@ struct SecondPage: View {
                         .foregroundColor(Color.fromHex("#6A7186"))
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.bottom, 40)
-                    PhoneNumberTextFieldView(placeHolder: SecondPage.$placholderPreview)
+                    PhoneNumberTextFieldView(placeHolder: PhoneRegisterView.$placholderPreview)
                         .padding(.bottom, 40)
                     
                     DefaultButton(buttonTitle: "Войти") {
-                        NavigationLink(destination: ThirdPage()) {
-                            Text("Show Detail View")
+                        NavigationLink(destination: router.navigateToOtp()) {
+                            EmptyView()
                         }
                     }
                     
@@ -64,6 +66,6 @@ struct SecondPage: View {
 
 struct SecondPage_Previews: PreviewProvider {
     static var previews: some View {
-        SecondPage()
+        PhoneRegisterView()
     }
 }
