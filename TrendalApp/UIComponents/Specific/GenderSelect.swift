@@ -20,6 +20,7 @@ struct GenderSelect: View {
             HStack(spacing: 22) {
                 VStack {
                     Image("maleIcon")
+                        .scaleEffect(selectedGender == .male ? 1.2 : 1.0)
                     Text("Мужской")
                         .foregroundColor(selectedGender == .male ? Color.fromHex("#38BDF8") : Color.gray)
                 }
@@ -30,11 +31,16 @@ struct GenderSelect: View {
                         .stroke(selectedGender == .male ? Color.fromHex("#38BDF8") : Color.gray, lineWidth: 1)
                 )
                 .onTapGesture {
-                    selectedGender = .male
+                    withAnimation {
+                        selectedGender = .male
+                    }
                 }
+                
+                Spacer()
 
                 VStack {
                     Image("femaleIcon")
+                        .scaleEffect(selectedGender == .female ? 1.2 : 1.0)
                     Text("Женский")
                         .foregroundColor(selectedGender == .female ? Color.fromHex("#38BDF8") : Color.gray)
                 }
@@ -45,7 +51,9 @@ struct GenderSelect: View {
                         .stroke(selectedGender == .female ? Color.fromHex("#38BDF8") : Color.gray, lineWidth: 1)
                 )
                 .onTapGesture {
-                    selectedGender = .female
+                    withAnimation {
+                        selectedGender = .female
+                    }
                 }
             }
         }

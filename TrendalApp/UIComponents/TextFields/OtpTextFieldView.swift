@@ -22,13 +22,16 @@ enum FocusField: Hashable {
 public struct OtpTextFieldView: View {
     
     @Binding var smsToken: String
+    @Binding var isCodeCompleted: Bool
+    @State private var isLoading: Bool = false
     
     @FocusState private var focusedField: FocusField?
         
     private var cancellableSet: Set<AnyCancellable> = []
     
-    init(smsToken: Binding<String>){
+    init(smsToken: Binding<String>, isCodeCompleted: Binding<Bool>){
         self._smsToken = smsToken
+        self._isCodeCompleted = isCodeCompleted
     }
     
     private var backgroundTextField: some View {
@@ -68,6 +71,7 @@ public struct OtpTextFieldView: View {
     func limitText(_ upper: Int) {
         if self.smsToken.count >= upper {
             self.smsToken = String(self.smsToken.prefix(upper))
+            isCodeCompleted = true
         }
     }
     
@@ -104,21 +108,22 @@ public struct OtpTextFieldView: View {
                 }
             }
         }
-        .onAppear {
-        }
+        .onAppear { }
         .onDisappear {
             self.smsToken = ""
+            self.isCodeCompleted = false
         }
     }
 }
     
 struct OtpTextFieldView_Previews: PreviewProvider {
     @State static var smsTokenPreview: String = ""
-        
-        static var previews: some View {
-            OtpTextFieldView(smsToken: $smsTokenPreview)
-        }
+    @State static var isCodeComplete: Bool = false
+    
+    static var previews: some View {
+        OtpTextFieldView(smsToken: $smsTokenPreview, isCodeCompleted: $isCodeComplete)
     }
+}
     
 #if canImport(UIKit)
 extension View {

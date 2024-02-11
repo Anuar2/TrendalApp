@@ -10,10 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var smsToken: String = ""
     var body: some View {
-        VStack {
-            SecondPage()
-        }
-        .padding()
+        PhoneRegisterView()
     }
 }
 

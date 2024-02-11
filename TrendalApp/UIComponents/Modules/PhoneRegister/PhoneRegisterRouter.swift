@@ -14,7 +14,7 @@ protocol PhoneRegisterRouterInput {
 
 final class PhoneRegisterRouter: PhoneRegisterRouterInput {
     func navigateToOtp() -> AnyView {
-        let destination = AnyView(FourthPage())
+        let destination = AnyView(OtpViewScreen().navigationBarBackButtonHidden(true))
         return destination
     }
 }

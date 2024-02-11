@@ -10,7 +10,9 @@ import SwiftUI
 struct PhoneRegisterView: View {
     
     @State static var placholderPreview: String = "Номер телефона"
+    @ObservedObject var viewModel = PhoneRegisterViewModel()
     var router = PhoneRegisterRouter()
+    @State private var isActive = false
     
     var body: some View {
         NavigationView {
@@ -31,14 +33,22 @@ struct PhoneRegisterView: View {
                         .foregroundColor(Color.fromHex("#6A7186"))
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.bottom, 40)
-                    PhoneNumberTextFieldView(placeHolder: PhoneRegisterView.$placholderPreview)
+                    PhoneNumberTextFieldView(placeHolder: PhoneRegisterView.$placholderPreview, phoneText: $viewModel.phoneModel.number)
                         .padding(.bottom, 40)
                     
                     DefaultButton(buttonTitle: "Войти") {
-                        NavigationLink(destination: router.navigateToOtp()) {
+                        print(viewModel.phoneModel)
+                        isActive = true
+                    }
+                    
+                    NavigationLink(
+                        destination: router.navigateToOtp(),
+                        isActive: $isActive,
+                        label: {
                             EmptyView()
                         }
-                    }
+                    )
+                    .hidden()
                     
                     Spacer()
                     

@@ -9,7 +9,8 @@ import SwiftUI
 
 struct PhoneNumberTextFieldView: View {
     @Binding var placeHolder: String
-    @State private var phoneText: String = ""
+    @Binding var phoneText: String
+    @State private var formattedText: String = ""
     @State private var changeBorder = false
 
     var body: some View {
@@ -24,12 +25,13 @@ struct PhoneNumberTextFieldView: View {
                 .frame(width: 2, height: 24)
                 .background(Color.fromHex("E2E8F0"))
             
-            TextField(placeHolder, text: $phoneText)
+            TextField(placeHolder, text: $formattedText)
                 .foregroundColor(.white)
                 .padding()
-                .onChange(of: phoneText) {
+                .onChange(of: formattedText) {
                     if !$0.isEmpty {
-                        phoneText = $0.formatPhoneNumber(text: phoneText)
+                        formattedText = $0.formatPhoneNumber(text: formattedText)
+                        phoneText = formattedText
                     }
                 }
                 .onChange(of: phoneText) { newValue in
@@ -46,9 +48,9 @@ struct PhoneNumberTextFieldView: View {
 
 struct PhoneNumberTextFieldView_Previews: PreviewProvider {
     @State static var placholderPreview: String = "Номер телефона"
-
+    @State static var phoneText: String = ""
     static var previews: some View {
-        PhoneNumberTextFieldView(placeHolder: $placholderPreview)
+        PhoneNumberTextFieldView(placeHolder: $placholderPreview, phoneText: $phoneText)
     }
 }
 

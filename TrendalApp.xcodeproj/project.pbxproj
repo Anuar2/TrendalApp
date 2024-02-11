@@ -12,6 +12,11 @@
 		5E14FD122B793301002AD82E /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FD112B793301002AD82E /* BackButton.swift */; };
 		5E14FD162B793448002AD82E /* PhoneRegisterConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FD152B793448002AD82E /* PhoneRegisterConfigurator.swift */; };
 		5E14FD182B793462002AD82E /* PhoneRegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FD172B793462002AD82E /* PhoneRegisterRouter.swift */; };
+		5E14FD1B2B793B0C002AD82E /* PhoneRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FD1A2B793B0C002AD82E /* PhoneRegisterViewModel.swift */; };
+		5E14FD1D2B793B68002AD82E /* PhoneNumberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FD1C2B793B68002AD82E /* PhoneNumberModel.swift */; };
+		5E14FD222B794ADE002AD82E /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FD212B794ADE002AD82E /* OTPViewModel.swift */; };
+		5E14FD252B794B27002AD82E /* OTPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FD242B794B27002AD82E /* OTPModel.swift */; };
+		5E14FD272B794BA3002AD82E /* OTPRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FD262B794BA3002AD82E /* OTPRouter.swift */; };
 		5E4AF1E92AC96AE9009E18AB /* TrendalAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF1E82AC96AE9009E18AB /* TrendalAppApp.swift */; };
 		5E4AF1EB2AC96AE9009E18AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF1EA2AC96AE9009E18AB /* ContentView.swift */; };
 		5E4AF1ED2AC96AEA009E18AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4AF1EC2AC96AEA009E18AB /* Assets.xcassets */; };
@@ -27,9 +32,8 @@
 		5E4AF21F2AC987B0009E18AB /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF21E2AC987B0009E18AB /* TextFieldView.swift */; };
 		5E4AF2212AC98986009E18AB /* PhoneNumberTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2202AC98986009E18AB /* PhoneNumberTextFieldView.swift */; };
 		5E4AF2232AC99707009E18AB /* OtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2222AC99707009E18AB /* OtpView.swift */; };
-		5E4AF2252ACA7252009E18AB /* FirtsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2242ACA7252009E18AB /* FirtsPage.swift */; };
 		5E4AF2272ACA745B009E18AB /* PhoneRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2262ACA745B009E18AB /* PhoneRegisterView.swift */; };
-		5E4AF2292ACA7B60009E18AB /* OtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2282ACA7B60009E18AB /* OtpView.swift */; };
+		5E4AF2292ACA7B60009E18AB /* OtpViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2282ACA7B60009E18AB /* OtpViewScreen.swift */; };
 		C03413912B70F62A004B0099 /* LikeAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413902B70F62A004B0099 /* LikeAnimationView.swift */; };
 		C03413CA2B7204AE004B0099 /* ViewedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413C92B7204AE004B0099 /* ViewedView.swift */; };
 		C03413CC2B720D79004B0099 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413CB2B720D79004B0099 /* DateView.swift */; };
@@ -84,6 +88,11 @@
 		5E14FD112B793301002AD82E /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		5E14FD152B793448002AD82E /* PhoneRegisterConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneRegisterConfigurator.swift; sourceTree = "<group>"; };
 		5E14FD172B793462002AD82E /* PhoneRegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneRegisterRouter.swift; sourceTree = "<group>"; };
+		5E14FD1A2B793B0C002AD82E /* PhoneRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneRegisterViewModel.swift; sourceTree = "<group>"; };
+		5E14FD1C2B793B68002AD82E /* PhoneNumberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberModel.swift; sourceTree = "<group>"; };
+		5E14FD212B794ADE002AD82E /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
+		5E14FD242B794B27002AD82E /* OTPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPModel.swift; sourceTree = "<group>"; };
+		5E14FD262B794BA3002AD82E /* OTPRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPRouter.swift; sourceTree = "<group>"; };
 		5E4AF1E52AC96AE9009E18AB /* TrendalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4AF1E82AC96AE9009E18AB /* TrendalAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendalAppApp.swift; sourceTree = "<group>"; };
 		5E4AF1EA2AC96AE9009E18AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,9 +111,8 @@
 		5E4AF21E2AC987B0009E18AB /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		5E4AF2202AC98986009E18AB /* PhoneNumberTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTextFieldView.swift; sourceTree = "<group>"; };
 		5E4AF2222AC99707009E18AB /* OtpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpView.swift; sourceTree = "<group>"; };
-		5E4AF2242ACA7252009E18AB /* FirtsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirtsPage.swift; sourceTree = "<group>"; };
 		5E4AF2262ACA745B009E18AB /* PhoneRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneRegisterView.swift; sourceTree = "<group>"; };
-		5E4AF2282ACA7B60009E18AB /* OtpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpView.swift; sourceTree = "<group>"; };
+		5E4AF2282ACA7B60009E18AB /* OtpViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewScreen.swift; sourceTree = "<group>"; };
 		C03413902B70F62A004B0099 /* LikeAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationView.swift; sourceTree = "<group>"; };
 		C03413C92B7204AE004B0099 /* ViewedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedView.swift; sourceTree = "<group>"; };
 		C03413CB2B720D79004B0099 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
@@ -164,6 +172,7 @@
 		5E14FD132B7933BD002AD82E /* PhoneRegister */ = {
 			isa = PBXGroup;
 			children = (
+				5E14FD192B793AFE002AD82E /* ViewModel */,
 				5E14FD142B79342B002AD82E /* View */,
 				5E14FD152B793448002AD82E /* PhoneRegisterConfigurator.swift */,
 				5E14FD172B793462002AD82E /* PhoneRegisterRouter.swift */,
@@ -177,6 +186,40 @@
 				5E4AF2262ACA745B009E18AB /* PhoneRegisterView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5E14FD192B793AFE002AD82E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5E14FD1A2B793B0C002AD82E /* PhoneRegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5E14FD1E2B794A82002AD82E /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+				5E14FD202B794AC6002AD82E /* ViewModel */,
+				5E14FD1F2B794A93002AD82E /* View */,
+				5E14FD262B794BA3002AD82E /* OTPRouter.swift */,
+			);
+			path = OTP;
+			sourceTree = "<group>";
+		};
+		5E14FD1F2B794A93002AD82E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E4AF2282ACA7B60009E18AB /* OtpViewScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E14FD202B794AC6002AD82E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5E14FD212B794ADE002AD82E /* OTPViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		5E4AF1DC2AC96AE9009E18AB = {
@@ -266,9 +309,8 @@
 		C03413DA2B724115004B0099 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5E14FD1E2B794A82002AD82E /* OTP */,
 				5E14FD132B7933BD002AD82E /* PhoneRegister */,
-				5E4AF2242ACA7252009E18AB /* FirtsPage.swift */,
-				5E4AF2282ACA7B60009E18AB /* OtpView.swift */,
 				E0E7632D2AD7ADCA0046D7B0 /* FourthPage.swift */,
 			);
 			path = Modules;
@@ -407,6 +449,8 @@
 			isa = PBXGroup;
 			children = (
 				CEBC44B22B70F19700995F56 /* User.swift */,
+				5E14FD1C2B793B68002AD82E /* PhoneNumberModel.swift */,
+				5E14FD242B794B27002AD82E /* OTPModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -569,6 +613,7 @@
 				5E4AF1E92AC96AE9009E18AB /* TrendalAppApp.swift in Sources */,
 				5E14FD102B7932A8002AD82E /* SizedSpacer.swift in Sources */,
 				5E4AF21F2AC987B0009E18AB /* TextFieldView.swift in Sources */,
+				5E14FD222B794ADE002AD82E /* OTPViewModel.swift in Sources */,
 				CEBC44B02B70F17500995F56 /* AccountService.swift in Sources */,
 				CEBC44C02B70F2D700995F56 /* NetworkLogger.swift in Sources */,
 				C03413D82B721888004B0099 /* Color+.swift in Sources */,
@@ -576,6 +621,7 @@
 				C03413D42B721709004B0099 /* LocationView.swift in Sources */,
 				CEBC44BA2B70F22300995F56 /* StorageProtocol.swift in Sources */,
 				C0F80D812B7028C200F9508F /* JobsView.swift in Sources */,
+				5E14FD272B794BA3002AD82E /* OTPRouter.swift in Sources */,
 				5E14FD122B793301002AD82E /* BackButton.swift in Sources */,
 				5E4AF2132AC96B0C009E18AB /* BackButtonView.swift in Sources */,
 				5E4AF2152AC96C38009E18AB /* DefaultButton.swift in Sources */,
@@ -585,10 +631,11 @@
 				5E4AF2192AC97EEF009E18AB /* OtpTextFieldView.swift in Sources */,
 				CEBC44A12B70ECA200995F56 /* AppColorsProtocol.swift in Sources */,
 				CEBC44A72B70EE4D00995F56 /* DateFormatter+.swift in Sources */,
-				5E4AF2252ACA7252009E18AB /* FirtsPage.swift in Sources */,
 				E0E763302AD7BBC40046D7B0 /* GenderSelect.swift in Sources */,
 				5E4AF2272ACA745B009E18AB /* PhoneRegisterView.swift in Sources */,
+				5E14FD1B2B793B0C002AD82E /* PhoneRegisterViewModel.swift in Sources */,
 				C03413CA2B7204AE004B0099 /* ViewedView.swift in Sources */,
+				5E14FD1D2B793B68002AD82E /* PhoneNumberModel.swift in Sources */,
 				C03413912B70F62A004B0099 /* LikeAnimationView.swift in Sources */,
 				5E14FD182B793462002AD82E /* PhoneRegisterRouter.swift in Sources */,
 				5E14FD162B793448002AD82E /* PhoneRegisterConfigurator.swift in Sources */,
@@ -598,9 +645,10 @@
 				CEBC44B52B70F1E200995F56 /* DataStorage.swift in Sources */,
 				CEBC44992B70EBC600995F56 /* CommonConstants.swift in Sources */,
 				C0F80D7B2B70100700F9508F /* JobModel.swift in Sources */,
-				5E4AF2292ACA7B60009E18AB /* OtpView.swift in Sources */,
+				5E4AF2292ACA7B60009E18AB /* OtpViewScreen.swift in Sources */,
 				5E4AF2212AC98986009E18AB /* PhoneNumberTextFieldView.swift in Sources */,
 				CEBC44BE2B70F2A700995F56 /* Endpoint.swift in Sources */,
+				5E14FD252B794B27002AD82E /* OTPModel.swift in Sources */,
 				C03413CC2B720D79004B0099 /* DateView.swift in Sources */,
 				5E4AF21B2AC97F5B009E18AB /* Text+Utils.swift in Sources */,
 			);
