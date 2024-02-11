@@ -33,7 +33,9 @@ struct SecondPage: View {
                         .padding(.bottom, 40)
                     
                     DefaultButton(buttonTitle: "Войти") {
-                        
+                        NavigationLink(destination: ThirdPage()) {
+                            Text("Show Detail View")
+                        }
                     }
                     
                     Spacer()

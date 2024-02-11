@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FirtsPage: View {
+struct LaunchScreenView: View {
     var body: some View {
         NavigationView {
             ZStack {
@@ -28,6 +28,6 @@ struct FirtsPage: View {
 
 struct FirtsPage_Previews: PreviewProvider {
     static var previews: some View {
-        FirtsPage()
+        LaunchScreenView()
     }
 }
