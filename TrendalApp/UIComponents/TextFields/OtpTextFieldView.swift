@@ -42,7 +42,6 @@ public struct OtpTextFieldView: View {
             .foregroundColor(.blue)
             .multilineTextAlignment(.center)
             .keyboardType(.numberPad)
-        
             .onReceive(Just(smsToken)) { _ in limitText(Constants.OTP_CODE_LENGTH) }
             .focused($focusedField, equals: .field)
             .onAppear {
@@ -62,9 +61,9 @@ public struct OtpTextFieldView: View {
     
     func isFocusedPinLabel(at index: Int) -> Color {
         if self.smsToken.count - 1 == index {
-            return Color.white
+            return Color.mainBackground
         } else {
-            return Color.white
+            return Color.mainBackground
         }
     }
     
@@ -83,6 +82,7 @@ public struct OtpTextFieldView: View {
                 ForEach(0..<4) { index in
                     ZStack {
                         Text(getPin(at: index))
+                            .foregroundColor(Color.white)
                             .font(Font.custom("SF Pro Display", size: 16))
                             .modifier(MaxSize(alignment: .center))
                             .frame(maxWidth: .infinity, maxHeight: 64)
@@ -93,9 +93,8 @@ public struct OtpTextFieldView: View {
                                     .stroke(Color.fromHex("#597766"), lineWidth: 1)
                             )
                         
-                        
                         Rectangle()
-                            .foregroundColor(Color.white)
+                            .foregroundColor(Color.mainBackground)
                             .frame(maxWidth: .infinity, maxHeight: 64)
                             .cornerRadius(16)
                             .overlay(

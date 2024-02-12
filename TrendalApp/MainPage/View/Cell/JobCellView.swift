@@ -23,7 +23,7 @@ struct JobCellView: View {
         }
         .padding()
         .foregroundColor(Color.white)
-        .background(Color.mainBackground)
+        .background(Color.mainGray)
         .clipShape(RoundedRectangle(cornerRadius: 20))
     }
     
