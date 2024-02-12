@@ -65,9 +65,7 @@ struct OtpViewScreen: View {
                 
                 Spacer()
             }
-        }
-        .onChange(of: isCodeCompleted) { newValue in
-            if newValue {
+            if isCodeCompleted {
                 NavigationLink(
                     destination: router.navigateToOtp(),
                     isActive: $isCodeCompleted,
@@ -77,6 +75,7 @@ struct OtpViewScreen: View {
                 )
             }
         }
+        .onChange(of: isCodeCompleted) { newValue in }
     }
     
     @ViewBuilder
