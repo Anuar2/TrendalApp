@@ -19,7 +19,13 @@ extension Color {
     }
     
     // TODO: Rename later | AzSu
-    static var mainBackground: Color {
+    static var mainGray: Color {
         return Color.fromHex("#1E293B")
     }
+    
+    static var mainBackground: Color {
+        return Color.fromHex("#0F172A")
+    }
+    
+    
 }
