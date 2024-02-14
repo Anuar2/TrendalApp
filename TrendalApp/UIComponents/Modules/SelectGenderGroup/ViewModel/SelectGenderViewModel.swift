@@ -1,5 +1,5 @@
 //
-//  GenderModel.swift
+//  SelectGenderViewModel.swift
 //  TrendalApp
 //
 //  Created by Anuar Orazbekov on 14.02.2024.
