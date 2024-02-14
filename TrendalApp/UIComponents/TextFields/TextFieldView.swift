@@ -20,6 +20,7 @@ struct TextFieldView: View {
                 if !isEditing {
                 }
             })
+            .foregroundColor(.white)
             .gesture(
                 DragGesture().onChanged { _ in
                     UIApplication.shared.endEditing()

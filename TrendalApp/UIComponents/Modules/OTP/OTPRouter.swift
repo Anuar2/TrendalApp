@@ -13,7 +13,7 @@ protocol OTPRouterRouterInput {
 
 final class OTPRouter: OTPRouterRouterInput {
     func navigateToOtp() -> AnyView {
-        let destination = AnyView(FourthPage().navigationBarBackButtonHidden(true))
+        let destination = AnyView(SelectGenderView().navigationBarBackButtonHidden(true))
         return destination
     }
 }

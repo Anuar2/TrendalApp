@@ -1,5 +1,5 @@
 //
-//  FourthPage.swift
+//  SelectGenderView.swift
 //  TrendalApp
 //
 //  Created by Anuar on 12.10.2023.
@@ -7,10 +7,12 @@
 
 import SwiftUI
 
-struct FourthPage: View {
+struct SelectGenderView: View {
     @State var namePlaceHolder = "Имя"
     @State var lastNamePlaceHolder = "Фамилия"
     @State private var isKeyboardVisible = false
+    
+    var router = SelectGenderRouter()
     
     var body: some View {
         ZStack {
@@ -35,6 +37,8 @@ struct FourthPage: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.leading, 16)
                 
+                SizedSpacer(height: 40)
+                
                 TextFieldView(placeHolder: $namePlaceHolder)
                     .padding(.leading)
                     .padding(.trailing)
@@ -54,7 +58,9 @@ struct FourthPage: View {
                 
                 Spacer()
                 
-                DefaultButton(buttonTitle: "Далее")
+                DefaultButton(buttonTitle: "Далее", action: {
+                    
+                })
                     .padding()
                 
             }
@@ -85,6 +91,6 @@ struct FourthPage: View {
 
 struct FourthPage_Previews: PreviewProvider {
     static var previews: some View {
-        FourthPage()
+        SelectGenderView()
     }
 }
