@@ -34,6 +34,10 @@
 		5E4AF2232AC99707009E18AB /* OtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2222AC99707009E18AB /* OtpView.swift */; };
 		5E4AF2272ACA745B009E18AB /* PhoneRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2262ACA745B009E18AB /* PhoneRegisterView.swift */; };
 		5E4AF2292ACA7B60009E18AB /* OtpViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2282ACA7B60009E18AB /* OtpViewScreen.swift */; };
+		5EDD4F382B7CB7BE0009D00B /* GenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F372B7CB7BE0009D00B /* GenderModel.swift */; };
+		5EDD4F3B2B7CB8BE0009D00B /* SelectGenderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F3A2B7CB8BE0009D00B /* SelectGenderRouter.swift */; };
+		5EDD4F3E2B7CB8DF0009D00B /* SelectGenderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F3D2B7CB8DF0009D00B /* SelectGenderViewModel.swift */; };
+		5EDD4F422B7CB90C0009D00B /* SelectGenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F412B7CB90C0009D00B /* SelectGenderView.swift */; };
 		C03413912B70F62A004B0099 /* LikeAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413902B70F62A004B0099 /* LikeAnimationView.swift */; };
 		C03413CA2B7204AE004B0099 /* ViewedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413C92B7204AE004B0099 /* ViewedView.swift */; };
 		C03413CC2B720D79004B0099 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413CB2B720D79004B0099 /* DateView.swift */; };
@@ -61,7 +65,6 @@
 		CEBC44BE2B70F2A700995F56 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44BD2B70F2A700995F56 /* Endpoint.swift */; };
 		CEBC44C02B70F2D700995F56 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44BF2B70F2D700995F56 /* NetworkLogger.swift */; };
 		CEBC44C22B70F33E00995F56 /* Router+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC44C12B70F33E00995F56 /* Router+Auth.swift */; };
-		E0E7632E2AD7ADCA0046D7B0 /* FourthPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E7632D2AD7ADCA0046D7B0 /* FourthPage.swift */; };
 		E0E763302AD7BBC40046D7B0 /* GenderSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E7632F2AD7BBC40046D7B0 /* GenderSelect.swift */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +116,10 @@
 		5E4AF2222AC99707009E18AB /* OtpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpView.swift; sourceTree = "<group>"; };
 		5E4AF2262ACA745B009E18AB /* PhoneRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneRegisterView.swift; sourceTree = "<group>"; };
 		5E4AF2282ACA7B60009E18AB /* OtpViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewScreen.swift; sourceTree = "<group>"; };
+		5EDD4F372B7CB7BE0009D00B /* GenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderModel.swift; sourceTree = "<group>"; };
+		5EDD4F3A2B7CB8BE0009D00B /* SelectGenderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGenderRouter.swift; sourceTree = "<group>"; };
+		5EDD4F3D2B7CB8DF0009D00B /* SelectGenderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGenderViewModel.swift; sourceTree = "<group>"; };
+		5EDD4F412B7CB90C0009D00B /* SelectGenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGenderView.swift; sourceTree = "<group>"; };
 		C03413902B70F62A004B0099 /* LikeAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationView.swift; sourceTree = "<group>"; };
 		C03413C92B7204AE004B0099 /* ViewedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedView.swift; sourceTree = "<group>"; };
 		C03413CB2B720D79004B0099 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
@@ -139,7 +146,6 @@
 		CEBC44BD2B70F2A700995F56 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		CEBC44BF2B70F2D700995F56 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		CEBC44C12B70F33E00995F56 /* Router+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Router+Auth.swift"; sourceTree = "<group>"; };
-		E0E7632D2AD7ADCA0046D7B0 /* FourthPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthPage.swift; sourceTree = "<group>"; };
 		E0E7632F2AD7BBC40046D7B0 /* GenderSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -286,6 +292,32 @@
 			path = TrendalAppUITests;
 			sourceTree = "<group>";
 		};
+		5EDD4F392B7CB87B0009D00B /* SelectGenderGroup */ = {
+			isa = PBXGroup;
+			children = (
+				5EDD4F3F2B7CB8F40009D00B /* View */,
+				5EDD4F3C2B7CB8C70009D00B /* ViewModel */,
+				5EDD4F3A2B7CB8BE0009D00B /* SelectGenderRouter.swift */,
+			);
+			path = SelectGenderGroup;
+			sourceTree = "<group>";
+		};
+		5EDD4F3C2B7CB8C70009D00B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5EDD4F3D2B7CB8DF0009D00B /* SelectGenderViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5EDD4F3F2B7CB8F40009D00B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5EDD4F412B7CB90C0009D00B /* SelectGenderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C03413CD2B720E48004B0099 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,9 +341,9 @@
 		C03413DA2B724115004B0099 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5EDD4F392B7CB87B0009D00B /* SelectGenderGroup */,
 				5E14FD1E2B794A82002AD82E /* OTP */,
 				5E14FD132B7933BD002AD82E /* PhoneRegister */,
-				E0E7632D2AD7ADCA0046D7B0 /* FourthPage.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -451,6 +483,7 @@
 				CEBC44B22B70F19700995F56 /* User.swift */,
 				5E14FD1C2B793B68002AD82E /* PhoneNumberModel.swift */,
 				5E14FD242B794B27002AD82E /* OTPModel.swift */,
+				5EDD4F372B7CB7BE0009D00B /* GenderModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -602,10 +635,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0E7632E2AD7ADCA0046D7B0 /* FourthPage.swift in Sources */,
 				5E4AF2232AC99707009E18AB /* OtpView.swift in Sources */,
 				CEBC44952B70EB0C00995F56 /* Assets.swift in Sources */,
 				CEBC44BC2B70F26700995F56 /* ApiClient.swift in Sources */,
+				5EDD4F3E2B7CB8DF0009D00B /* SelectGenderViewModel.swift in Sources */,
 				C0F80D792B700FC100F9508F /* JobCellView.swift in Sources */,
 				5E4AF1EB2AC96AE9009E18AB /* ContentView.swift in Sources */,
 				CEBC449F2B70EC6900995F56 /* IntExtension.swift in Sources */,
@@ -632,6 +665,7 @@
 				CEBC44A12B70ECA200995F56 /* AppColorsProtocol.swift in Sources */,
 				CEBC44A72B70EE4D00995F56 /* DateFormatter+.swift in Sources */,
 				E0E763302AD7BBC40046D7B0 /* GenderSelect.swift in Sources */,
+				5EDD4F382B7CB7BE0009D00B /* GenderModel.swift in Sources */,
 				5E4AF2272ACA745B009E18AB /* PhoneRegisterView.swift in Sources */,
 				5E14FD1B2B793B0C002AD82E /* PhoneRegisterViewModel.swift in Sources */,
 				C03413CA2B7204AE004B0099 /* ViewedView.swift in Sources */,
@@ -642,7 +676,9 @@
 				CEBC44B32B70F19700995F56 /* User.swift in Sources */,
 				5E4AF2172AC96E29009E18AB /* ExtensionColor.swift in Sources */,
 				CEBC44A32B70ED4F00995F56 /* FontExtension.swift in Sources */,
+				5EDD4F422B7CB90C0009D00B /* SelectGenderView.swift in Sources */,
 				CEBC44B52B70F1E200995F56 /* DataStorage.swift in Sources */,
+				5EDD4F3B2B7CB8BE0009D00B /* SelectGenderRouter.swift in Sources */,
 				CEBC44992B70EBC600995F56 /* CommonConstants.swift in Sources */,
 				C0F80D7B2B70100700F9508F /* JobModel.swift in Sources */,
 				5E4AF2292ACA7B60009E18AB /* OtpViewScreen.swift in Sources */,

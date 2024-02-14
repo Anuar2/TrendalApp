@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct GenderModel: Identifiable {
+    var id: Int?
+    var name: String?
+    var surname: String?
+    var gender: Gender?
+}
