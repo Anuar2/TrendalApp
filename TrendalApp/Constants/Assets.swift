@@ -13,6 +13,7 @@ import SwiftUI
 internal enum Assets: String {
     //MainPage
     case model
+    case chooseJobsIcon
     
     public var name: String {
         return self.rawValue

@@ -15,7 +15,7 @@ protocol SelectGenderRouterInput {
 
 final class SelectGenderRouter: SelectGenderRouterInput {
     func navigateToJobSelection() -> AnyView {
-        let destination = AnyView(OtpViewScreen().navigationBarBackButtonHidden(true))
+        let destination = AnyView(ChooseJobsView().presentationDetents([.medium, .large]))
         return destination
     }
 }

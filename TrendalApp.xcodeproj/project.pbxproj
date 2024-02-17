@@ -38,6 +38,10 @@
 		5EDD4F3B2B7CB8BE0009D00B /* SelectGenderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F3A2B7CB8BE0009D00B /* SelectGenderRouter.swift */; };
 		5EDD4F3E2B7CB8DF0009D00B /* SelectGenderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F3D2B7CB8DF0009D00B /* SelectGenderViewModel.swift */; };
 		5EDD4F422B7CB90C0009D00B /* SelectGenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F412B7CB90C0009D00B /* SelectGenderView.swift */; };
+		5EDD4F482B7DDA610009D00B /* ChooseJobsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F472B7DDA610009D00B /* ChooseJobsRouter.swift */; };
+		5EDD4F4A2B7DDAC70009D00B /* ChooseJobsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F492B7DDAC70009D00B /* ChooseJobsViewModel.swift */; };
+		5EDD4F4C2B7DDAF90009D00B /* ChooseJobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F4B2B7DDAF90009D00B /* ChooseJobsView.swift */; };
+		5EDD4F4E2B7DDF400009D00B /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F4D2B7DDF400009D00B /* BottomSheetView.swift */; };
 		C03413912B70F62A004B0099 /* LikeAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413902B70F62A004B0099 /* LikeAnimationView.swift */; };
 		C03413CA2B7204AE004B0099 /* ViewedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413C92B7204AE004B0099 /* ViewedView.swift */; };
 		C03413CC2B720D79004B0099 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413CB2B720D79004B0099 /* DateView.swift */; };
@@ -120,6 +124,10 @@
 		5EDD4F3A2B7CB8BE0009D00B /* SelectGenderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGenderRouter.swift; sourceTree = "<group>"; };
 		5EDD4F3D2B7CB8DF0009D00B /* SelectGenderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGenderViewModel.swift; sourceTree = "<group>"; };
 		5EDD4F412B7CB90C0009D00B /* SelectGenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGenderView.swift; sourceTree = "<group>"; };
+		5EDD4F472B7DDA610009D00B /* ChooseJobsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseJobsRouter.swift; sourceTree = "<group>"; };
+		5EDD4F492B7DDAC70009D00B /* ChooseJobsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseJobsViewModel.swift; sourceTree = "<group>"; };
+		5EDD4F4B2B7DDAF90009D00B /* ChooseJobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseJobsView.swift; sourceTree = "<group>"; };
+		5EDD4F4D2B7DDF400009D00B /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		C03413902B70F62A004B0099 /* LikeAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationView.swift; sourceTree = "<group>"; };
 		C03413C92B7204AE004B0099 /* ViewedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedView.swift; sourceTree = "<group>"; };
 		C03413CB2B720D79004B0099 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
@@ -318,6 +326,32 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		5EDD4F432B7DDA390009D00B /* ChooseJobs */ = {
+			isa = PBXGroup;
+			children = (
+				5EDD4F452B7DDA4D0009D00B /* ViewModel */,
+				5EDD4F442B7DDA490009D00B /* View */,
+				5EDD4F472B7DDA610009D00B /* ChooseJobsRouter.swift */,
+			);
+			path = ChooseJobs;
+			sourceTree = "<group>";
+		};
+		5EDD4F442B7DDA490009D00B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5EDD4F4B2B7DDAF90009D00B /* ChooseJobsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5EDD4F452B7DDA4D0009D00B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5EDD4F492B7DDAC70009D00B /* ChooseJobsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C03413CD2B720E48004B0099 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +375,7 @@
 		C03413DA2B724115004B0099 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5EDD4F432B7DDA390009D00B /* ChooseJobs */,
 				5EDD4F392B7CB87B0009D00B /* SelectGenderGroup */,
 				5E14FD1E2B794A82002AD82E /* OTP */,
 				5E14FD132B7933BD002AD82E /* PhoneRegister */,
@@ -384,6 +419,7 @@
 				5E4AF2222AC99707009E18AB /* OtpView.swift */,
 				E0E7632F2AD7BBC40046D7B0 /* GenderSelect.swift */,
 				C03413902B70F62A004B0099 /* LikeAnimationView.swift */,
+				5EDD4F4D2B7DDF400009D00B /* BottomSheetView.swift */,
 			);
 			path = Specific;
 			sourceTree = "<group>";
@@ -648,16 +684,19 @@
 				5E4AF21F2AC987B0009E18AB /* TextFieldView.swift in Sources */,
 				5E14FD222B794ADE002AD82E /* OTPViewModel.swift in Sources */,
 				CEBC44B02B70F17500995F56 /* AccountService.swift in Sources */,
+				5EDD4F4C2B7DDAF90009D00B /* ChooseJobsView.swift in Sources */,
 				CEBC44C02B70F2D700995F56 /* NetworkLogger.swift in Sources */,
 				C03413D82B721888004B0099 /* Color+.swift in Sources */,
 				CEBC44B82B70F20E00995F56 /* UserDefaultsStorage.swift in Sources */,
 				C03413D42B721709004B0099 /* LocationView.swift in Sources */,
 				CEBC44BA2B70F22300995F56 /* StorageProtocol.swift in Sources */,
 				C0F80D812B7028C200F9508F /* JobsView.swift in Sources */,
+				5EDD4F4A2B7DDAC70009D00B /* ChooseJobsViewModel.swift in Sources */,
 				5E14FD272B794BA3002AD82E /* OTPRouter.swift in Sources */,
 				5E14FD122B793301002AD82E /* BackButton.swift in Sources */,
 				5E4AF2132AC96B0C009E18AB /* BackButtonView.swift in Sources */,
 				5E4AF2152AC96C38009E18AB /* DefaultButton.swift in Sources */,
+				5EDD4F4E2B7DDF400009D00B /* BottomSheetView.swift in Sources */,
 				C03413D62B7217CC004B0099 /* ExperienceView.swift in Sources */,
 				CEBC44AD2B70F0B000995F56 /* Interceptor.swift in Sources */,
 				CEBC44C22B70F33E00995F56 /* Router+Auth.swift in Sources */,
@@ -675,6 +714,7 @@
 				5E14FD162B793448002AD82E /* PhoneRegisterConfigurator.swift in Sources */,
 				CEBC44B32B70F19700995F56 /* User.swift in Sources */,
 				5E4AF2172AC96E29009E18AB /* ExtensionColor.swift in Sources */,
+				5EDD4F482B7DDA610009D00B /* ChooseJobsRouter.swift in Sources */,
 				CEBC44A32B70ED4F00995F56 /* FontExtension.swift in Sources */,
 				5EDD4F422B7CB90C0009D00B /* SelectGenderView.swift in Sources */,
 				CEBC44B52B70F1E200995F56 /* DataStorage.swift in Sources */,
