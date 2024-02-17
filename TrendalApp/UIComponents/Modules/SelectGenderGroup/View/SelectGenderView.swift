@@ -11,8 +11,7 @@ struct SelectGenderView: View {
     @State var namePlaceHolder = "Имя"
     @State var lastNamePlaceHolder = "Фамилия"
     @State private var isKeyboardVisible = false
-    @State private var isSheetPresented = false
-
+    
     var router = SelectGenderRouter()
     
     var body: some View {
@@ -64,9 +63,6 @@ struct SelectGenderView: View {
                 })
                     .padding()
                 
-                .sheet(isPresented: $isSheetPresented, content: {
-                    router.navigateToJobSelection()
-                })
             }
             .onAppear {
                 keyboardObserver()
