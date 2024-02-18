@@ -12,22 +12,26 @@ struct JobSelectView: View {
         HStack {
             ZStack {
                 Circle().frame(width: 56)
-                Image(systemName: "suitcase.fill").foregroundColor(.white)
-                
-                
+                Image(systemName: "suitcase.fill")
+                    .foregroundColor(.white)                
             }
-            Spacer().frame(width: 20)
+            SizedSpacer(width: 20)
             VStack(alignment: .leading) {
-                Text("Я специалист").foregroundColor(.white)
-                Text("У нас легко найти работу\n своей мечты.").foregroundColor(.gray)
+                Text("Я специалист")
+                    .font(.system(size: 16))
+                    .foregroundColor(.white)
+                    .bold()
+                SizedSpacer(height: 3)
+                Text("У нас легко найти работу\nсвоей мечты.")
+                    .font(.system(size: 14))
+                    .foregroundColor(.gray)
             }
-//            Spacer().frame(width: 10)
             Spacer()
-
             Image(systemName: "checkmark.circle.fill")
+                .foregroundStyle(.white, Color.primaryShade)
         }
         .padding()
-        .foregroundColor(Color.primaryShade)
+        .foregroundColor(.primaryShade)
         .background(Color.mainGray)
         .cornerRadius(20)
         

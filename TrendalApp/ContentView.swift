@@ -37,7 +37,6 @@ struct ContentView: View {
                         Label("Профиль", systemImage: "person.crop.circle")
                     }
             }.accentColor(.primaryShade)
-            
         }
         
     }
