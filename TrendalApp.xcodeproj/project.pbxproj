@@ -34,6 +34,7 @@
 		5E4AF2232AC99707009E18AB /* OtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2222AC99707009E18AB /* OtpView.swift */; };
 		5E4AF2272ACA745B009E18AB /* PhoneRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2262ACA745B009E18AB /* PhoneRegisterView.swift */; };
 		5E4AF2292ACA7B60009E18AB /* OtpViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4AF2282ACA7B60009E18AB /* OtpViewScreen.swift */; };
+		5ED383A72B824ECB00D8C711 /* Resized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED383A62B824ECB00D8C711 /* Resized.swift */; };
 		5EDD4F382B7CB7BE0009D00B /* GenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F372B7CB7BE0009D00B /* GenderModel.swift */; };
 		5EDD4F3B2B7CB8BE0009D00B /* SelectGenderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F3A2B7CB8BE0009D00B /* SelectGenderRouter.swift */; };
 		5EDD4F3E2B7CB8DF0009D00B /* SelectGenderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F3D2B7CB8DF0009D00B /* SelectGenderViewModel.swift */; };
@@ -41,7 +42,12 @@
 		5EDD4F482B7DDA610009D00B /* ChooseJobsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F472B7DDA610009D00B /* ChooseJobsRouter.swift */; };
 		5EDD4F4A2B7DDAC70009D00B /* ChooseJobsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F492B7DDAC70009D00B /* ChooseJobsViewModel.swift */; };
 		5EDD4F4C2B7DDAF90009D00B /* ChooseJobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F4B2B7DDAF90009D00B /* ChooseJobsView.swift */; };
-		5EDD4F4E2B7DDF400009D00B /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F4D2B7DDF400009D00B /* BottomSheetView.swift */; };
+		5EDD4F632B81E8280009D00B /* Binding+isPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F622B81E8280009D00B /* Binding+isPresent.swift */; };
+		5EDD4F652B81E85F0009D00B /* BottomSheetConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F642B81E85F0009D00B /* BottomSheetConfiguration.swift */; };
+		5EDD4F672B81E8880009D00B /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F662B81E8880009D00B /* BottomSheetView.swift */; };
+		5EDD4F692B81E8A80009D00B /* BottomSheetViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F682B81E8A80009D00B /* BottomSheetViewModifier.swift */; };
+		5EDD4F6B2B81E8C60009D00B /* DismissableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F6A2B81E8C60009D00B /* DismissableView.swift */; };
+		5EDD4F6D2B81E8F40009D00B /* NonAnimatedUIKitModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F6C2B81E8F40009D00B /* NonAnimatedUIKitModal.swift */; };
 		C03413912B70F62A004B0099 /* LikeAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413902B70F62A004B0099 /* LikeAnimationView.swift */; };
 		C03413CA2B7204AE004B0099 /* ViewedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413C92B7204AE004B0099 /* ViewedView.swift */; };
 		C03413CC2B720D79004B0099 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413CB2B720D79004B0099 /* DateView.swift */; };
@@ -120,6 +126,7 @@
 		5E4AF2222AC99707009E18AB /* OtpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpView.swift; sourceTree = "<group>"; };
 		5E4AF2262ACA745B009E18AB /* PhoneRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneRegisterView.swift; sourceTree = "<group>"; };
 		5E4AF2282ACA7B60009E18AB /* OtpViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewScreen.swift; sourceTree = "<group>"; };
+		5ED383A62B824ECB00D8C711 /* Resized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resized.swift; sourceTree = "<group>"; };
 		5EDD4F372B7CB7BE0009D00B /* GenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderModel.swift; sourceTree = "<group>"; };
 		5EDD4F3A2B7CB8BE0009D00B /* SelectGenderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGenderRouter.swift; sourceTree = "<group>"; };
 		5EDD4F3D2B7CB8DF0009D00B /* SelectGenderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGenderViewModel.swift; sourceTree = "<group>"; };
@@ -127,7 +134,12 @@
 		5EDD4F472B7DDA610009D00B /* ChooseJobsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseJobsRouter.swift; sourceTree = "<group>"; };
 		5EDD4F492B7DDAC70009D00B /* ChooseJobsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseJobsViewModel.swift; sourceTree = "<group>"; };
 		5EDD4F4B2B7DDAF90009D00B /* ChooseJobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseJobsView.swift; sourceTree = "<group>"; };
-		5EDD4F4D2B7DDF400009D00B /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		5EDD4F622B81E8280009D00B /* Binding+isPresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+isPresent.swift"; sourceTree = "<group>"; };
+		5EDD4F642B81E85F0009D00B /* BottomSheetConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetConfiguration.swift; sourceTree = "<group>"; };
+		5EDD4F662B81E8880009D00B /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		5EDD4F682B81E8A80009D00B /* BottomSheetViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewModifier.swift; sourceTree = "<group>"; };
+		5EDD4F6A2B81E8C60009D00B /* DismissableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissableView.swift; sourceTree = "<group>"; };
+		5EDD4F6C2B81E8F40009D00B /* NonAnimatedUIKitModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonAnimatedUIKitModal.swift; sourceTree = "<group>"; };
 		C03413902B70F62A004B0099 /* LikeAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationView.swift; sourceTree = "<group>"; };
 		C03413C92B7204AE004B0099 /* ViewedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedView.swift; sourceTree = "<group>"; };
 		C03413CB2B720D79004B0099 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
@@ -352,6 +364,20 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		5EDD4F612B81E8000009D00B /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				5EDD4F622B81E8280009D00B /* Binding+isPresent.swift */,
+				5EDD4F642B81E85F0009D00B /* BottomSheetConfiguration.swift */,
+				5EDD4F662B81E8880009D00B /* BottomSheetView.swift */,
+				5EDD4F682B81E8A80009D00B /* BottomSheetViewModifier.swift */,
+				5EDD4F6A2B81E8C60009D00B /* DismissableView.swift */,
+				5EDD4F6C2B81E8F40009D00B /* NonAnimatedUIKitModal.swift */,
+				5ED383A62B824ECB00D8C711 /* Resized.swift */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
 		C03413CD2B720E48004B0099 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,6 +388,7 @@
 		C03413D02B720EBF004B0099 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				5EDD4F612B81E8000009D00B /* BottomSheet */,
 				C03413DE2B7241DE004B0099 /* Specific */,
 				C03413DD2B7241B3004B0099 /* TextFields */,
 				C03413DC2B724199004B0099 /* Buttons */,
@@ -419,7 +446,6 @@
 				5E4AF2222AC99707009E18AB /* OtpView.swift */,
 				E0E7632F2AD7BBC40046D7B0 /* GenderSelect.swift */,
 				C03413902B70F62A004B0099 /* LikeAnimationView.swift */,
-				5EDD4F4D2B7DDF400009D00B /* BottomSheetView.swift */,
 			);
 			path = Specific;
 			sourceTree = "<group>";
@@ -685,9 +711,11 @@
 				5E14FD222B794ADE002AD82E /* OTPViewModel.swift in Sources */,
 				CEBC44B02B70F17500995F56 /* AccountService.swift in Sources */,
 				5EDD4F4C2B7DDAF90009D00B /* ChooseJobsView.swift in Sources */,
+				5ED383A72B824ECB00D8C711 /* Resized.swift in Sources */,
 				CEBC44C02B70F2D700995F56 /* NetworkLogger.swift in Sources */,
 				C03413D82B721888004B0099 /* Color+.swift in Sources */,
 				CEBC44B82B70F20E00995F56 /* UserDefaultsStorage.swift in Sources */,
+				5EDD4F672B81E8880009D00B /* BottomSheetView.swift in Sources */,
 				C03413D42B721709004B0099 /* LocationView.swift in Sources */,
 				CEBC44BA2B70F22300995F56 /* StorageProtocol.swift in Sources */,
 				C0F80D812B7028C200F9508F /* JobsView.swift in Sources */,
@@ -696,11 +724,11 @@
 				5E14FD122B793301002AD82E /* BackButton.swift in Sources */,
 				5E4AF2132AC96B0C009E18AB /* BackButtonView.swift in Sources */,
 				5E4AF2152AC96C38009E18AB /* DefaultButton.swift in Sources */,
-				5EDD4F4E2B7DDF400009D00B /* BottomSheetView.swift in Sources */,
 				C03413D62B7217CC004B0099 /* ExperienceView.swift in Sources */,
 				CEBC44AD2B70F0B000995F56 /* Interceptor.swift in Sources */,
 				CEBC44C22B70F33E00995F56 /* Router+Auth.swift in Sources */,
 				5E4AF2192AC97EEF009E18AB /* OtpTextFieldView.swift in Sources */,
+				5EDD4F632B81E8280009D00B /* Binding+isPresent.swift in Sources */,
 				CEBC44A12B70ECA200995F56 /* AppColorsProtocol.swift in Sources */,
 				CEBC44A72B70EE4D00995F56 /* DateFormatter+.swift in Sources */,
 				E0E763302AD7BBC40046D7B0 /* GenderSelect.swift in Sources */,
@@ -719,6 +747,7 @@
 				5EDD4F422B7CB90C0009D00B /* SelectGenderView.swift in Sources */,
 				CEBC44B52B70F1E200995F56 /* DataStorage.swift in Sources */,
 				5EDD4F3B2B7CB8BE0009D00B /* SelectGenderRouter.swift in Sources */,
+				5EDD4F692B81E8A80009D00B /* BottomSheetViewModifier.swift in Sources */,
 				CEBC44992B70EBC600995F56 /* CommonConstants.swift in Sources */,
 				C0F80D7B2B70100700F9508F /* JobModel.swift in Sources */,
 				5E4AF2292ACA7B60009E18AB /* OtpViewScreen.swift in Sources */,
@@ -726,7 +755,10 @@
 				CEBC44BE2B70F2A700995F56 /* Endpoint.swift in Sources */,
 				5E14FD252B794B27002AD82E /* OTPModel.swift in Sources */,
 				C03413CC2B720D79004B0099 /* DateView.swift in Sources */,
+				5EDD4F652B81E85F0009D00B /* BottomSheetConfiguration.swift in Sources */,
 				5E4AF21B2AC97F5B009E18AB /* Text+Utils.swift in Sources */,
+				5EDD4F6B2B81E8C60009D00B /* DismissableView.swift in Sources */,
+				5EDD4F6D2B81E8F40009D00B /* NonAnimatedUIKitModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
