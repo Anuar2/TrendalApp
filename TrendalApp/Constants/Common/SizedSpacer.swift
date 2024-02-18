@@ -8,10 +8,17 @@
 import SwiftUI
 
 struct SizedSpacer: View {
-    let height: CGFloat
+    let width: CGFloat?
+    let height: CGFloat?
+    
+    init(width: CGFloat? = nil, height: CGFloat? = nil) {
+            self.width = width
+            self.height = height
+    }
+    
     var body: some View {
         Spacer()
-            .frame(height: height)
+            .frame(width: width, height: height)
     }
 }
 
