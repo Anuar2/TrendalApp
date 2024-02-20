@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+///BottomSheet with SheetContent
 private struct BottomSheetViewModifier<SheetContent>: ViewModifier where SheetContent: View {
     let isPresented: Binding<Bool>
     let contentView: () -> SheetContent
