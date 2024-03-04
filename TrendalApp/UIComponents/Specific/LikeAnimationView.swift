@@ -9,20 +9,16 @@ import SwiftUI
 
 struct LikeAnimationView: View {
     
-    // Animations: Scale, color change and inner stroke (stroke border)
     @State private var circleSize = 0.0
     @State private var circleInnerBorder = 35
     @State private var circleHue = 200
     
-    // Scaling Spring Animation
     @State private var heart = Image(systemName: "heart")
     @State private var scaleHeart = 0.0
     
-    // Scale and opacity animations
     @State private var splash = 0.0
     @State private var splashTransparency = 1.0
     
-    // Boolean state to track whether content is liked or not
     @State private var isLiked = false
     
     var body: some View {
@@ -35,7 +31,6 @@ struct LikeAnimationView: View {
                         .animation(Animation.easeInOut(duration: 0.5).delay(0.25))
                         .scaleEffect(CGFloat(splash))
                         .animation(Animation.easeInOut(duration: 0.5))
-                    // Rotated splash
                     Image("splash")
                         .rotationEffect(.degrees(90))
                         .opacity(Double(splashTransparency))
@@ -54,13 +49,12 @@ struct LikeAnimationView: View {
                         .animation(Animation.easeInOut(duration: 0.5))
                 )
             }
-            // Filled heart icon
             HStack {
                 heart
                     .scaleEffect(CGFloat(scaleHeart))
                     .animation(Animation.interpolatingSpring(stiffness: 170, damping: 15).delay(0.25))
             }
-        } // All views
+        }
         .foregroundColor(Color.primaryShade)
         .onTapGesture {
             let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
@@ -79,7 +73,6 @@ struct LikeAnimationView: View {
                     splashTransparency = 1
                     
                 } else {
-                    // Like
                     heart = Image(systemName: "heart.fill")
                     scaleHeart = 1
                     
