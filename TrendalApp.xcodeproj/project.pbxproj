@@ -48,6 +48,9 @@
 		5EDD4F692B81E8A80009D00B /* BottomSheetViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F682B81E8A80009D00B /* BottomSheetViewModifier.swift */; };
 		5EDD4F6B2B81E8C60009D00B /* DismissableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F6A2B81E8C60009D00B /* DismissableView.swift */; };
 		5EDD4F6D2B81E8F40009D00B /* NonAnimatedUIKitModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD4F6C2B81E8F40009D00B /* NonAnimatedUIKitModal.swift */; };
+		5EF0717C2B958E2600363736 /* SetJobsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF0717B2B958E2600363736 /* SetJobsRouter.swift */; };
+		5EF0717E2B958E7B00363736 /* SetJobsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF0717D2B958E7B00363736 /* SetJobsViewModel.swift */; };
+		5EF071802B958EBC00363736 /* SetJobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF0717F2B958EBC00363736 /* SetJobsView.swift */; };
 		C03413912B70F62A004B0099 /* LikeAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413902B70F62A004B0099 /* LikeAnimationView.swift */; };
 		C03413CA2B7204AE004B0099 /* ViewedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413C92B7204AE004B0099 /* ViewedView.swift */; };
 		C03413CC2B720D79004B0099 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413CB2B720D79004B0099 /* DateView.swift */; };
@@ -140,6 +143,9 @@
 		5EDD4F682B81E8A80009D00B /* BottomSheetViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewModifier.swift; sourceTree = "<group>"; };
 		5EDD4F6A2B81E8C60009D00B /* DismissableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissableView.swift; sourceTree = "<group>"; };
 		5EDD4F6C2B81E8F40009D00B /* NonAnimatedUIKitModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonAnimatedUIKitModal.swift; sourceTree = "<group>"; };
+		5EF0717B2B958E2600363736 /* SetJobsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetJobsRouter.swift; sourceTree = "<group>"; };
+		5EF0717D2B958E7B00363736 /* SetJobsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetJobsViewModel.swift; sourceTree = "<group>"; };
+		5EF0717F2B958EBC00363736 /* SetJobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetJobsView.swift; sourceTree = "<group>"; };
 		C03413902B70F62A004B0099 /* LikeAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationView.swift; sourceTree = "<group>"; };
 		C03413C92B7204AE004B0099 /* ViewedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedView.swift; sourceTree = "<group>"; };
 		C03413CB2B720D79004B0099 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
@@ -378,6 +384,32 @@
 			path = BottomSheet;
 			sourceTree = "<group>";
 		};
+		5EF071772B958DBD00363736 /* SetJobs */ = {
+			isa = PBXGroup;
+			children = (
+				5EF071792B958DDA00363736 /* View */,
+				5EF071782B958DD500363736 /* ViewModel */,
+				5EF0717B2B958E2600363736 /* SetJobsRouter.swift */,
+			);
+			path = SetJobs;
+			sourceTree = "<group>";
+		};
+		5EF071782B958DD500363736 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5EF0717D2B958E7B00363736 /* SetJobsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5EF071792B958DDA00363736 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5EF0717F2B958EBC00363736 /* SetJobsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C03413CD2B720E48004B0099 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,6 +434,7 @@
 		C03413DA2B724115004B0099 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5EF071772B958DBD00363736 /* SetJobs */,
 				5EDD4F432B7DDA390009D00B /* ChooseJobs */,
 				5EDD4F392B7CB87B0009D00B /* SelectGenderGroup */,
 				5E14FD1E2B794A82002AD82E /* OTP */,
@@ -713,6 +746,7 @@
 				5EDD4F4C2B7DDAF90009D00B /* ChooseJobsView.swift in Sources */,
 				5ED383A72B824ECB00D8C711 /* Resized.swift in Sources */,
 				CEBC44C02B70F2D700995F56 /* NetworkLogger.swift in Sources */,
+				5EF071802B958EBC00363736 /* SetJobsView.swift in Sources */,
 				C03413D82B721888004B0099 /* Color+.swift in Sources */,
 				CEBC44B82B70F20E00995F56 /* UserDefaultsStorage.swift in Sources */,
 				5EDD4F672B81E8880009D00B /* BottomSheetView.swift in Sources */,
@@ -738,6 +772,7 @@
 				C03413CA2B7204AE004B0099 /* ViewedView.swift in Sources */,
 				5E14FD1D2B793B68002AD82E /* PhoneNumberModel.swift in Sources */,
 				C03413912B70F62A004B0099 /* LikeAnimationView.swift in Sources */,
+				5EF0717C2B958E2600363736 /* SetJobsRouter.swift in Sources */,
 				5E14FD182B793462002AD82E /* PhoneRegisterRouter.swift in Sources */,
 				5E14FD162B793448002AD82E /* PhoneRegisterConfigurator.swift in Sources */,
 				CEBC44B32B70F19700995F56 /* User.swift in Sources */,
@@ -751,6 +786,7 @@
 				CEBC44992B70EBC600995F56 /* CommonConstants.swift in Sources */,
 				C0F80D7B2B70100700F9508F /* JobModel.swift in Sources */,
 				5E4AF2292ACA7B60009E18AB /* OtpViewScreen.swift in Sources */,
+				5EF0717E2B958E7B00363736 /* SetJobsViewModel.swift in Sources */,
 				5E4AF2212AC98986009E18AB /* PhoneNumberTextFieldView.swift in Sources */,
 				CEBC44BE2B70F2A700995F56 /* Endpoint.swift in Sources */,
 				5E14FD252B794B27002AD82E /* OTPModel.swift in Sources */,
