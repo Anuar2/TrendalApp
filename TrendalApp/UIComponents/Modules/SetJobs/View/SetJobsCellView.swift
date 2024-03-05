@@ -23,8 +23,8 @@ struct SetJobsCellView: View {
         .padding()
         .foregroundColor(Color.white)
         .background(Color.mainGray)
-        .border(isSelected ? Color.fromHex("#38BDF8") : Color.fromHex("#A8A8A8"), width: 2).cornerRadius(20)
-        .clipShape(RoundedRectangle(cornerRadius: 20))
+        .border(isSelected ? Color.fromHex("#38BDF8") : Color.fromHex("#A8A8A8"), width: 2).cornerRadius(16)
+        .clipShape(RoundedRectangle(cornerRadius: 16))
         .padding(.horizontal)
     }
     
