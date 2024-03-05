@@ -21,15 +21,7 @@ struct SetJobsView: View {
                     .padding(.leading, 16)
                     .padding(.bottom, 10)
                 
-                SetJobsIconView()
-                
-                Text("У Вас еще не созданных резюме")
-                    .font(Font.custom("Roboto", size: 14))
-                    .foregroundColor(Color.fromHex("#6A7186"))
-                    .tint(Color.white)
-                    .multilineTextAlignment(.center)
-                    .frame(maxWidth: .infinity, alignment: .center)
-                    .padding()
+                Spacer()
                  
                 DefaultButton(buttonTitle: "Отправить отклик") {
                     print("jopa")
@@ -48,17 +40,6 @@ struct SetJobsView: View {
 
 struct SetJobsView_Previews: PreviewProvider {
     static var previews: some View {
-        ChooseJobsView()
-    }
-}
-
-struct SetJobsIconView: View {
-    var body: some View {
-        ZStack {
-            Circle()
-                .foregroundColor(.white)
-                .frame(width: 120, height: 120)
-            Image(Assets.chooseJobsIcon.name)
-        }
+        SetJobsView()
     }
 }
