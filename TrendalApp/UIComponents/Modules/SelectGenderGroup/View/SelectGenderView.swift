@@ -11,8 +11,10 @@ struct SelectGenderView: View {
     @State var namePlaceHolder = "Имя"
     @State var lastNamePlaceHolder = "Фамилия"
     @State private var isKeyboardVisible = false
+    @State var isNavigateToJobSelection = false
     
     var router = SelectGenderRouter()
+    var viewModel = SelectGenderViewModel()
     
     var body: some View {
         ZStack {
@@ -59,7 +61,7 @@ struct SelectGenderView: View {
                 Spacer()
                 
                 DefaultButton(buttonTitle: "Далее", action: {
-                    
+                    isNavigateToJobSelection = true
                 })
                     .padding()
                 
@@ -67,6 +69,10 @@ struct SelectGenderView: View {
             .onAppear {
                 keyboardObserver()
             }
+            ///Всегда забываю как этот боттомщит открывается, пускай пока стоит 
+//            .bottomSheet(isPresented: $isNavigateToJobSelection) {
+//                router.navigateToJobSelection()
+//            }
         }
     }
     

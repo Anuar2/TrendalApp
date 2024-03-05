@@ -9,9 +9,10 @@ import SwiftUI
 
 struct SetJobsView: View {
     
-    @State var jobs: [SetJobsModel]
+    @State var jobs: [SetJobsModel] = mocks
     var router = SetJobsRouter()
-    
+    @State var selectedIndex: Int? = nil
+
     var body: some View {
         ZStack {
             backgroundColor
@@ -23,17 +24,26 @@ struct SetJobsView: View {
                     .padding(.leading, 16)
                     .padding(.bottom, 10)
                 
-                LazyVStack {
-                    ForEach(mocks, id: \.id) { mock in
-                        SetJobsCellView(model: mock)
-                    }
+                
+                ForEach(jobs.indices, id: \.self) { index in
+                    SetJobsCellView(model: jobs[index], isSelected: $jobs[index].isSelected)
+                        .onTapGesture {
+                            selectedIndex = index
+                            updateSelection(index: index)
+                        }
                 }
                  
                 DefaultButton(buttonTitle: "Отправить отклик") {
-                    print("jopa")
                 }
                 .padding()
             }
+        }
+    }
+    
+    
+    private func updateSelection(index: Int) {
+        for i in jobs.indices {
+            jobs[i].isSelected = i == index
         }
     }
     
@@ -55,7 +65,7 @@ private var mocks: [SetJobsModel] = [
                  salary: "170 000 - 250 000 ₸",
                  location: "Алматы",
                  experience: "От 1 до  лет", 
-                 isSelected: true),
+                 isSelected: false),
     
     SetJobsModel(id: 2,
                  position: "Мобилограф",

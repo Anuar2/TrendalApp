@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SetJobsCellView: View {
     @State var model: SetJobsModel
-    @State var isSelected = false
+    @Binding var isSelected: Bool
     
     var body: some View {
         HStack {
@@ -19,13 +19,11 @@ struct SetJobsCellView: View {
             }
             Spacer()
             RadioButton(selected: $isSelected)
-                .onTapGesture {
-                    isSelected.toggle()
-                }
         }
         .padding()
         .foregroundColor(Color.white)
         .background(Color.mainGray)
+        .border(isSelected ? Color.fromHex("#38BDF8") : Color.fromHex("#A8A8A8"), width: 2).cornerRadius(20)
         .clipShape(RoundedRectangle(cornerRadius: 20))
         .padding(.horizontal)
     }
@@ -78,6 +76,7 @@ struct RadioButton: View {
 
 struct SetJobsCellView_Previews: PreviewProvider {
     static var previews: some View {
+        @State var mockState = false
         List {
             SetJobsCellView(
                 model: SetJobsModel(
@@ -86,9 +85,8 @@ struct SetJobsCellView_Previews: PreviewProvider {
                     salary: "170 000 - 250 000 ₸",
                     location: "Алматы",
                     experience: "От 1 до 3 лет",
-                    isSelected: true
-                ),
-                isSelected: true
+                    isSelected: false
+                ), isSelected: $mockState
             )
             SetJobsCellView(
                 model: SetJobsModel(
@@ -98,8 +96,7 @@ struct SetJobsCellView_Previews: PreviewProvider {
                     location: "Алматы",
                     experience: "От 3 до 6 лет",
                     isSelected: false
-                ),
-                isSelected: false
+                ), isSelected: $mockState
             )
         }
         .listStyle(PlainListStyle())
