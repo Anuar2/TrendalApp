@@ -51,6 +51,8 @@
 		5EF0717C2B958E2600363736 /* SetJobsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF0717B2B958E2600363736 /* SetJobsRouter.swift */; };
 		5EF0717E2B958E7B00363736 /* SetJobsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF0717D2B958E7B00363736 /* SetJobsViewModel.swift */; };
 		5EF071802B958EBC00363736 /* SetJobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF0717F2B958EBC00363736 /* SetJobsView.swift */; };
+		5EF0720E2B96DF5100363736 /* SetJobsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF0720D2B96DF5100363736 /* SetJobsModel.swift */; };
+		5EF072102B96E12F00363736 /* SetJobsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF0720F2B96E12F00363736 /* SetJobsCellView.swift */; };
 		C03413912B70F62A004B0099 /* LikeAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413902B70F62A004B0099 /* LikeAnimationView.swift */; };
 		C03413CA2B7204AE004B0099 /* ViewedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413C92B7204AE004B0099 /* ViewedView.swift */; };
 		C03413CC2B720D79004B0099 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03413CB2B720D79004B0099 /* DateView.swift */; };
@@ -146,6 +148,8 @@
 		5EF0717B2B958E2600363736 /* SetJobsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetJobsRouter.swift; sourceTree = "<group>"; };
 		5EF0717D2B958E7B00363736 /* SetJobsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetJobsViewModel.swift; sourceTree = "<group>"; };
 		5EF0717F2B958EBC00363736 /* SetJobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetJobsView.swift; sourceTree = "<group>"; };
+		5EF0720D2B96DF5100363736 /* SetJobsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetJobsModel.swift; sourceTree = "<group>"; };
+		5EF0720F2B96E12F00363736 /* SetJobsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetJobsCellView.swift; sourceTree = "<group>"; };
 		C03413902B70F62A004B0099 /* LikeAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationView.swift; sourceTree = "<group>"; };
 		C03413C92B7204AE004B0099 /* ViewedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedView.swift; sourceTree = "<group>"; };
 		C03413CB2B720D79004B0099 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
@@ -387,6 +391,7 @@
 		5EF071772B958DBD00363736 /* SetJobs */ = {
 			isa = PBXGroup;
 			children = (
+				5EF0720C2B96DF4400363736 /* Model */,
 				5EF071792B958DDA00363736 /* View */,
 				5EF071782B958DD500363736 /* ViewModel */,
 				5EF0717B2B958E2600363736 /* SetJobsRouter.swift */,
@@ -406,8 +411,17 @@
 			isa = PBXGroup;
 			children = (
 				5EF0717F2B958EBC00363736 /* SetJobsView.swift */,
+				5EF0720F2B96E12F00363736 /* SetJobsCellView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5EF0720C2B96DF4400363736 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5EF0720D2B96DF5100363736 /* SetJobsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C03413CD2B720E48004B0099 /* Helpers */ = {
@@ -732,6 +746,7 @@
 			files = (
 				5E4AF2232AC99707009E18AB /* OtpView.swift in Sources */,
 				CEBC44952B70EB0C00995F56 /* Assets.swift in Sources */,
+				5EF0720E2B96DF5100363736 /* SetJobsModel.swift in Sources */,
 				CEBC44BC2B70F26700995F56 /* ApiClient.swift in Sources */,
 				5EDD4F3E2B7CB8DF0009D00B /* SelectGenderViewModel.swift in Sources */,
 				C0F80D792B700FC100F9508F /* JobCellView.swift in Sources */,
@@ -784,6 +799,7 @@
 				5EDD4F3B2B7CB8BE0009D00B /* SelectGenderRouter.swift in Sources */,
 				5EDD4F692B81E8A80009D00B /* BottomSheetViewModifier.swift in Sources */,
 				CEBC44992B70EBC600995F56 /* CommonConstants.swift in Sources */,
+				5EF072102B96E12F00363736 /* SetJobsCellView.swift in Sources */,
 				C0F80D7B2B70100700F9508F /* JobModel.swift in Sources */,
 				5E4AF2292ACA7B60009E18AB /* OtpViewScreen.swift in Sources */,
 				5EF0717E2B958E7B00363736 /* SetJobsViewModel.swift in Sources */,

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SetJobsView: View {
+    
+    @State var jobs: [SetJobsModel]
     var router = SetJobsRouter()
     
     var body: some View {
@@ -21,13 +23,16 @@ struct SetJobsView: View {
                     .padding(.leading, 16)
                     .padding(.bottom, 10)
                 
-                Spacer()
+                LazyVStack {
+                    ForEach(mocks, id: \.id) { mock in
+                        SetJobsCellView(model: mock)
+                    }
+                }
                  
                 DefaultButton(buttonTitle: "Отправить отклик") {
                     print("jopa")
                 }
                 .padding()
-                
             }
         }
     }
@@ -40,6 +45,22 @@ struct SetJobsView: View {
 
 struct SetJobsView_Previews: PreviewProvider {
     static var previews: some View {
-        SetJobsView()
+        SetJobsView(jobs: mocks)
     }
 }
+
+private var mocks: [SetJobsModel] = [
+    SetJobsModel(id: 1, 
+                 position: "Мобилограф",
+                 salary: "170 000 - 250 000 ₸",
+                 location: "Алматы",
+                 experience: "От 1 до  лет", 
+                 isSelected: true),
+    
+    SetJobsModel(id: 2,
+                 position: "Мобилограф",
+                 salary: "170 000 - 250 000 ₸",
+                 location: "Алматы",
+                 experience: "От 1 до 3 лет",
+                 isSelected: false)
+]
