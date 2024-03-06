@@ -42,7 +42,7 @@ struct SetJobsView: View {
     
     
     private func updateSelection(index: Int) {
-        for i in jobs.indices {
+        jobs.indices.forEach { i in
             jobs[i].isSelected = i == index
         }
     }
