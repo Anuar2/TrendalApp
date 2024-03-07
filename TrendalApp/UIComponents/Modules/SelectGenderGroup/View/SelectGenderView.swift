@@ -69,10 +69,23 @@ struct SelectGenderView: View {
             .onAppear {
                 keyboardObserver()
             }
-            ///Всегда забываю как этот боттомщит открывается, пускай пока стоит 
-//            .bottomSheet(isPresented: $isNavigateToJobSelection) {
-//                router.navigateToJobSelection()
-//            }
+//            /Всегда забываю как этот боттомщит открывается, пускай пока стоит 
+            .bottomSheet(isPresented: $isNavigateToJobSelection) {
+                router.navigateToJobSelection()
+            }
+            .bottomSheetConfiguration(.init(background: {
+               Color.fromHex("#0F172A")
+            }, dim: {
+                AnyView(Color.black.opacity(0.3))
+            }, indicator: {
+                AnyView(
+                    RoundedRectangle(cornerRadius: 2)
+                        .fill(.gray)
+                        .frame(width: 64, height: 4)
+                        .padding([.top], 12)
+                        .padding([.bottom], 16)
+                )
+            }))
         }
     }
     
